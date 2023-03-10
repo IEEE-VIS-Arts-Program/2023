@@ -31,10 +31,10 @@ export default function Home() {
 						xl={{ span: 8, offset: 2 }}
 						className={classNames("mb-5")}
 					>
-						<FlowingLogo className={classNames("mb-3")} />
+						<FlowingLogo />
 						<h4 className={classNames("mb-3")}>Melbourne (VIC), Australia, October 2023</h4>
 						<h5 className={classNames("mt-4")}>
-							The theme for VISAP’23 is <strong>Perpetual Presence</strong>
+							The theme for VISAP2023 is <strong>Perpetual Presence</strong>
 						</h5>
 						<p>
 							The VIS Arts Program (VISAP) is a mini-conference and exhibition where visualization researchers,
@@ -49,7 +49,7 @@ export default function Home() {
 							evaluations of data visualizations, and philosophical meditations on the intersections between art and
 							research. These can either be submitted to a paper track, or to an exhibition track (see details below).
 						</p>
-						<p>ADD IMAGES OF LAST YEAR CONTRIBUTIONS</p>
+						<p>[ADD HERE IMAGES OF LAST YEAR CONTRIBUTIONS]</p>
 						
 					</Col>
 				</Row>
