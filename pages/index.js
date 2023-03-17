@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ExportedImage from "next-image-export-optimizer";
 import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
+// import GalleryHome from "../components/GalleryHome";
 
 export default function Home() {
 	return (
@@ -32,25 +33,53 @@ export default function Home() {
 						className={classNames("mb-5")}
 					>
 						<FlowingLogo />
-						<h4 className={classNames("mb-3")}>Melbourne (VIC), Australia, October 2023</h4>
+						<h4 className={classNames("mb-3")}>Melbourne (VIC), Australia, 22—27 October 2023</h4>
 						<h5 className={classNames("mt-4")}>
 							The theme for VISAP2023 is <strong>Perpetual Presence</strong>
 						</h5>
 						<p>
-							The VIS Arts Program (VISAP) is a mini-conference and exhibition where visualization researchers,
-							designers, and artists come together to showcase and discuss works at the intersection of data
-							visualization, art and design. It is the biggest associated event in the{" "}
-							<a href="http://ieeevis.org/year/2022/welcome">IEEE VIS conference</a>, and its main goal is to foster new
-							thinking, discussion, and collaboration across and between fields of research and practice.
+							The VIS Arts Program (VISAP) is a mini-conference and exhibition in the{" "}
+							<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
+							researchers, designers, and artists come together to showcase and discuss works at the intersection of
+							data visualization, art and design. together to showcase and discuss works at the intersection of data
+							visualization, art and design. It links artists, practitioners, data scientists, and theoreticians, in
+							order to foster discussion and collaboration between fields of research and practice.
 						</p>
 						<p>
-							VISAP welcomes a wide range of submissions, including interactive artworks, design projects, novel
-							visualization tools and applications, art-science or artist-in-lab projects, critical interpretations and
-							evaluations of data visualizations, and philosophical meditations on the intersections between art and
-							research. These can either be submitted to a paper track, or to an exhibition track (see details below).
+							<strong>The theme for VISAP’23 is “Perpetual Presence”.</strong> Data is all around us, a perpetual and
+							ubiquitous digital stream of meaning that permeates throughout the ambient informatic which backgrounds
+							our societies. Perpetual Presence acknowledges the transformative potential of data as influencing
+							cultural, economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of
+							responding to the intersectionality of realities, then Perpetual Presence is an aesthetic in which data
+							abundantly flourishes in ways that extend our understanding of the world.
 						</p>
-						<p>[ADD HERE IMAGES OF LAST YEAR CONTRIBUTIONS]</p>
-						
+						<p>
+							VISAP’23 invites research papers, pictorials, and artwork submissions for presentation in two interrelated
+							tracks during the conference and exhibition in October 2023. We seek original work examining new
+							aesthetics and critical cultures at the intersection of art, science and technology that respond to the
+							theme of perpetual presence.
+						</p>
+						<p>
+							VISAP will be an in-person only event in 2023, in line with the broader IEEE VIS Conference. There will be
+							an opportunity to connect with the VISAP and local artistic community via talks and/or workshops. As such,
+							presenting artists are expected to attend in person and actively contribute to discussions. We understand
+							this arrangement may not be suitable for some, and will review alternative arrangements.
+						</p>
+						<p>
+							Accepted works will be published on the official VISAP website and in a dedicated exhibition catalogue.
+							Papers and pictorials will be indexed in the IEEE Xplore digital library.
+						</p>
+						<p>
+							The submission deadline for all tracks is in June 2023. Details on how to submit a paper, pictorial or
+							artwork will follow soon.
+						</p>
+						<p>
+							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
+						</p>
+						<p>
+							Twitter: <a href="https://twitter.com/visapnet">https://twitter.com/visapnet</a>
+						</p>
+						{/* <p>[ADD HERE IMAGES OF LAST YEAR CONTRIBUTIONS]</p> */}
 					</Col>
 				</Row>
 			</Container>

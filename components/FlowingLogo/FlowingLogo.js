@@ -57,7 +57,6 @@ export default function FlowingLogo() {
 		p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
 
 		size = Math.min(125, Math.max(p5.windowWidth * 0.1, 75));
-		console.log(size)
 
 		p5.blendMode(p5.BLEND)
 		p5FillColor = p5.color(fillColor);
