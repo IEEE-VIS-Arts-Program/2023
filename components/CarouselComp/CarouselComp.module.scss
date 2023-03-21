@@ -1,0 +1,30 @@
+.carousel {
+	:global .carousel-inner {
+		height: 100%;
+		position: absolute;
+	}
+	:global .carousel-control-prev,
+	:global .carousel-control-next {
+		&:hover {
+			border-bottom: none;
+		}
+	}
+	.carouselItem {
+		height: 100%;
+		border-radius: 3px;
+		overflow: hidden;
+		.carouselImage {
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.carouselCaption {
+			p {
+				background-color: var(--bg);
+				color: var(--accent);
+				display: inline;
+				padding: 0.125rem 0.25rem;
+			}
+		}
+	}
+}

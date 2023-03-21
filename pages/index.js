@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ExportedImage from "next-image-export-optimizer";
 import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
-// import GalleryHome from "../components/GalleryHome";
+import GalleryHome from "../components/GalleryHome";
 
 export default function Home() {
 	return (
@@ -79,6 +79,7 @@ export default function Home() {
 						<p>
 							Twitter: <a href="https://twitter.com/visapnet">https://twitter.com/visapnet</a>
 						</p>
+						<GalleryHome/>
 						{/* <p>[ADD HERE IMAGES OF LAST YEAR CONTRIBUTIONS]</p> */}
 					</Col>
 				</Row>
