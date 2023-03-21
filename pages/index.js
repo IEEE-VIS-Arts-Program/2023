@@ -73,14 +73,14 @@ export default function Home() {
 							The submission deadline for all tracks is in June 2023. Details on how to submit a paper, pictorial or
 							artwork will follow soon.
 						</p>
+						<h5 className={classNames("mt-4")}>Some works from VISAP2022</h5>
+						<GalleryHome className={classNames("mt-2","mb-4")} />
 						<p>
 							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
 						</p>
 						<p>
 							Twitter: <a href="https://twitter.com/visapnet">https://twitter.com/visapnet</a>
 						</p>
-						<GalleryHome/>
-						{/* <p>[ADD HERE IMAGES OF LAST YEAR CONTRIBUTIONS]</p> */}
 					</Col>
 				</Row>
 			</Container>
