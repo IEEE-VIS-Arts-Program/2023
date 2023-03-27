@@ -43,7 +43,7 @@ export default function Home() {
 							in order to foster discussion and collaboration between fields of research and practice.
 						</p>
 						<p>
-							<strong>The theme for VISAP 2023 is “Perpetual Presence”</strong>. Data is all around us, a perpetual and
+							The theme for the current year is “Perpetual Presence”. Data is all around us, a perpetual and
 							ubiquitous digital stream of meaning that permeates throughout the ambient informatic which backgrounds
 							our societies. Perpetual Presence acknowledges the transformative potential of data as influencing
 							cultural, economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of
