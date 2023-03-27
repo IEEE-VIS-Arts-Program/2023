@@ -33,20 +33,17 @@ export default function Home() {
 						className={classNames("mb-5")}
 					>
 						<FlowingLogo />
-						<h4 className={classNames("mb-3")}>Melbourne (VIC), Australia, 22—27 October 2023</h4>
-						<h5 className={classNames("mt-4")}>
-							The theme for VISAP2023 is <strong>Perpetual Presence</strong>
-						</h5>
+						<h2 className={classNames("mt-4", "mb-1")}>IEEE VISAP 2023 - Perpetual Presence</h2>
+						<h6 className={classNames("mb-5")}>Melbourne (VIC), Australia, 22—27 October 2023</h6>
 						<p>
 							The VIS Arts Program (VISAP) is a mini-conference and exhibition in the{" "}
 							<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
 							researchers, designers, and artists come together to showcase and discuss works at the intersection of
-							data visualization, art and design. together to showcase and discuss works at the intersection of data
-							visualization, art and design. It links artists, practitioners, data scientists, and theoreticians, in
-							order to foster discussion and collaboration between fields of research and practice.
+							data visualization, art and design. It links artists, practitioners, data scientists, and theoreticians,
+							in order to foster discussion and collaboration between fields of research and practice.
 						</p>
 						<p>
-							<strong>The theme for VISAP’23 is “Perpetual Presence”.</strong> Data is all around us, a perpetual and
+							<strong>The theme for VISAP 2023 is “Perpetual Presence”</strong>. Data is all around us, a perpetual and
 							ubiquitous digital stream of meaning that permeates throughout the ambient informatic which backgrounds
 							our societies. Perpetual Presence acknowledges the transformative potential of data as influencing
 							cultural, economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of
@@ -74,7 +71,7 @@ export default function Home() {
 							artwork will follow soon.
 						</p>
 						<h5 className={classNames("mt-4")}>Some works from VISAP2022</h5>
-						<GalleryHome className={classNames("mt-2","mb-4")} />
+						<GalleryHome className={classNames("mt-2", "mb-4")} />
 						<p>
 							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
 						</p>
