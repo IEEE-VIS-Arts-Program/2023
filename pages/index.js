@@ -36,19 +36,19 @@ export default function Home() {
 						<h2 className={classNames("mt-4", "mb-1")}>IEEE VISAP 2023 - Perpetual Presence</h2>
 						<h6 className={classNames("mb-5")}>Melbourne (VIC), Australia, 22—27 October 2023</h6>
 						<p>
-							The VIS Arts Program (VISAP) is a mini-conference and exhibition in the{" "}
+							The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 							<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
 							researchers, designers, and artists come together to showcase and discuss works at the intersection of
 							data visualization, art and design. It links artists, practitioners, data scientists, and theoreticians,
 							in order to foster discussion and collaboration between fields of research and practice.
 						</p>
 						<p>
-							Data is all around us, a perpetual and
-							ubiquitous digital stream of meaning that permeates throughout the ambient informatic which backgrounds
-							our societies. Perpetual Presence acknowledges the transformative potential of data as influencing
-							cultural, economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of
-							responding to the intersectionality of realities, then Perpetual Presence is an aesthetic in which data
-							abundantly flourishes in ways that extend our understanding of the world.
+							<strong>The theme for IEEE VISAP 2023 is <i>Perpetual Presence</i>.</strong> Data is all around us, a perpetual and ubiquitous
+							digital stream of meaning that permeates throughout the ambient informatic which backgrounds our
+							societies. <i>Perpetual Presence</i> acknowledges the transformative potential of data as influencing cultural,
+							economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of responding to
+							the intersectionality of realities, then <i>Perpetual Presence</i> is an aesthetic in which data abundantly
+							flourishes in ways that extend our understanding of the world.
 						</p>
 						<p>
 							VISAP’23 invites research papers, pictorials, and artwork submissions for presentation in two interrelated
@@ -76,7 +76,10 @@ export default function Home() {
 							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
 						</p>
 						<p>
-							Twitter: <a href="https://twitter.com/visapnet">https://twitter.com/visapnet</a>
+							Twitter: <a href="https://twitter.com/visapnet">@visapnet</a>
+						</p>
+						<p>
+							Mastodon: <a href="https://vis.social/@visapt">@@visap@vis.social</a>
 						</p>
 					</Col>
 				</Row>

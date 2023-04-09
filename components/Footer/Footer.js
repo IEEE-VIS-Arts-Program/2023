@@ -23,12 +23,12 @@ export default function Footer() {
 							{/* <img className={classNames(styles.logo)} src={logoVisap.src} alt="VISAP2022 logo" /> */}
 							IEEE VISAP 2023
 							<div className={classNames(styles.navigation)}>
+								<Link href="/call-for-entries">Call for Entries</Link>
+								<Link href="/submission">Submission instructions</Link>
 								{/* <Link href="/">Home</Link>
 								<Link href="/contributions">Contributions</Link>
 								<Link href="/programme">Programme</Link>
-								<Link href="/organizers">Organizers</Link>
-								<Link href="/call-for-entries">Call for Entries</Link>
-								<Link href="/submission">Submission instructions</Link> */}
+								<Link href="/organizers">Organizers</Link>*/}
 							</div>
 							<div className={classNames("mt-2")}>
 								<a
@@ -38,18 +38,35 @@ export default function Footer() {
 									style={{ display: "inline-block", width: "2rem" }}
 									className={classNames("me-2")}
 								>
-									<ExportedImage src={logoVis.src} layout="responsive" width={logoVis.width} height={logoVis.height} alt="IEEE VIS logo" />
+									<ExportedImage
+										src={logoVis.src}
+										layout="responsive"
+										width={logoVis.width}
+										height={logoVis.height}
+										alt="IEEE VIS logo"
+									/>
 								</a>
-								<a href="https://twitter.com/visapnet" target="_blank" rel="noreferrer" style={{ display: "inline-block", width: "2rem" }}>
-									<ExportedImage src={logoTwitter.src} width={logoTwitter.width} height={logoTwitter.height} layout="responsive" alt="Twitter logo" />
+								<a
+									href="https://twitter.com/visapnet"
+									target="_blank"
+									rel="noreferrer"
+									style={{ display: "inline-block", width: "2rem" }}
+								>
+									<ExportedImage
+										src={logoTwitter.src}
+										width={logoTwitter.width}
+										height={logoTwitter.height}
+										layout="responsive"
+										alt="Twitter logo"
+									/>
 								</a>
 							</div>
 						</div>
 					</Col>
 					<Col xs={12} md={4} lg={4} xl={6} className={classNames("mb-5")}>
-						<h6 className={classNames("mb-3")}>Supporters</h6>
+						{/* <h6 className={classNames("mb-3")}>Supporters</h6>
 						<p>TBA</p>
-						{/* <div className="logos mb-3">
+						<div className="logos mb-3">
 							<a className="logo" href="https://www.autodesk.com/" target="_blank" rel="noreferrer">
 								<ExportedImage src={logoAutodesk} alt="Autodesk Logo" layout="fill" objectFit="contain" objectPosition="left center" />
 							</a>

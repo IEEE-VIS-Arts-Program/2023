@@ -19,19 +19,21 @@ export default function Header() {
 			>
 				<Container>
 					<Navbar.Brand className="py-0" href={basePath + "/"}>
-						{/* <img
-							className={classNames(styles.logo)}
-							src={visapLogo.src}
-							alt="VISAP22 logo"
-						/> */}
 						IEEE VISAP 2023
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="ms-auto">
+							{/* <Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
+								Call for Entries
+							</Link> */}
+							{/* <Link href="/submission" className={classNames("nav-link", "reset-link")}>
+								Submission
+							</Link> */}
 							{/* <Link href="/">
 								<a className={classNames("nav-link", "reset-link")}>Home</a>
 							</Link> */}
+							
 							{/* <Link href="/contributions">
 								<a className={classNames("nav-link", "reset-link")}>
 									Contributions
@@ -52,11 +54,7 @@ export default function Header() {
 									Organizers
 								</a>
 							</Link>
-							<Link href="/call-for-entries">
-								<a className={classNames("nav-link", "reset-link")}>
-									Call for Entries
-								</a>
-							</Link> */}
+							 */}
 							{/* <NavDropdown title="Submission" id="collasible-nav-dropdown">
 								<NavDropdown.Item
 									href="/submission#important-dates"
