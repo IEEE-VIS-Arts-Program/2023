@@ -33,8 +33,8 @@ let p5FillColor, p5StrokeColor;
 const fontSampleFactor = 0.15; //How many points there are: the higher the number, the closer together they are (more detail)
 const noiseZoom = 0.005; //how zoomed in the perlin noise is
 const noiseOctaves = 4; //The number of octaves for the noise
-const noiseFalloff = 0.5; //The falloff for the noise layers
-const zOffsetChange = 0; //How much the noise field changes in the z direction each frame
+const noiseFalloff = 3; //The falloff for the noise layers default 0.5
+const zOffsetChange = 0; //How much the noise field changes in the z direction each frame default 0
 const individualZOffset = 0.001; //how far away the points/lines are from each other in the z noise axies (the bigger the number, the more chaotic)
 const lineSpeed = 0.25; //the maximum amount each point can move each frame
 
