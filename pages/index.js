@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>VISAP23</title>
+				<title>VISAP 2023</title>
 				<meta
 					name="description"
 					content={
@@ -70,7 +70,7 @@ export default function Home() {
 							The submission deadline for all tracks is in June 2023. Details on how to submit a paper, pictorial or
 							artwork will follow soon.
 						</p>
-						<h5 className={classNames("mt-4")}>Some works from VISAP2022</h5>
+						<h5 className={classNames("mt-4")}>Some works from VISAP 2022</h5>
 						<GalleryHome className={classNames("mt-2", "mb-4")} />
 						<p>
 							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}

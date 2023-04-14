@@ -9,7 +9,7 @@ export default function PageTemplate({ metaTitle, metaContent, children, submenu
 	return (
 		<>
 			<Head>
-				<title>{metaTitle + " | VISAP'22"}</title>
+				<title>{metaTitle + " | VISAP 2023"}</title>
 				<meta name="description" content={metaContent} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
