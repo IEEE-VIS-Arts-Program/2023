@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function FlowGenerator() {
 	const router = useRouter();
-	const [phrase, setPhrase] = useState("?w=any phrase");
+	const [phrase, setPhrase] = useState("PERLIN NOISE");
 	const [noiseZoom, setNoiseZoom] = useState();
 	const [fontSize, setFontSize] = useState();
 	const [noiseOctaves, setNoiseOctaves] = useState();
