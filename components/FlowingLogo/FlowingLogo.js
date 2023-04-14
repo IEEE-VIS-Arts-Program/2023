@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-function convertRemToPixels(rem) {    
+function convertRemToPixels(rem) {
 	return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
@@ -11,16 +12,14 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 });
 
 // Original code by The Wizard Bear
-
-const string = "VISAP23"; //words to be displayed
 let size; //font size
 const showText = true; //whether or not to have an overlay of the original text (in the background color)
 let bgColor;
 let fillColor; //kinda self-explanatory
 let strokeColor; //'#00ff55'; //the line color
 if (typeof window === "undefined") {
-	bgColor = fillColor = "#000"
-	strokeColor = "#fff"
+	bgColor = fillColor = "#000";
+	strokeColor = "#fff";
 } else {
 	bgColor = fillColor = getComputedStyle(document.documentElement).getPropertyValue("--bg");
 	strokeColor = getComputedStyle(document.documentElement).getPropertyValue("--accent");
@@ -45,7 +44,24 @@ let font,
 	startingPoints,
 	img;
 
-export default function FlowingLogo() {
+export default function FlowingLogo({ phrase, noiseZoomProp, fontSizeProp, noiseOctavesProp, dYProp, widthProp, heightProp }) {
+	let string = "VISAP23"; //words to be displayed
+	if (phrase) {
+		string = phrase;
+	}
+	let noiseZoom = 0.005; //how zoomed in the perlin noise is
+	if (noiseZoomProp) {
+		noiseZoom = Number(noiseZoomProp);
+	}
+	let noiseOctaves = 0.005; //how zoomed in the perlin noise is
+	if (noiseOctavesProp) {
+		noiseOctaves = Number(noiseOctavesProp);
+	}
+	let dY = 0;
+	if (dYProp) {
+		dY = Number(dYProp);
+	}
+
 	const { basePath } = useRouter();
 
 	const preload = (p5) => {
@@ -53,21 +69,28 @@ export default function FlowingLogo() {
 		fontRegular = p5.loadFont(basePath + "/fonts/SoraOTF/Sora-Regular.otf");
 	};
 
+	let translation = { x: 0, y: 0 };
+
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
+		const usedWidth = widthProp ? (p5.windowWidth / 100) * widthProp : p5.windowWidth;
+		const usedHeight = heightProp ? (p5.windowHeight / 100) * heightProp : p5.windowHeight;
+		p5.createCanvas(usedWidth, usedHeight).parent(canvasParentRef);
 
 		size = Math.min(125, Math.max(p5.windowWidth * 0.1, 75));
+		if (fontSizeProp) {
+			size = Number(fontSizeProp);
+		}
 
-		p5.blendMode(p5.BLEND)
+		p5.blendMode(p5.BLEND);
 		p5FillColor = p5.color(fillColor);
 		p5FillColor.setAlpha(fillAlpha);
 		p5StrokeColor = p5.color(strokeColor);
 		p5StrokeColor.setAlpha(strokeAlpha);
 		p5.background(bgColor);
 
-		p5.textSize(size);
 		p5.noiseDetail(noiseOctaves, noiseFalloff);
 
+		p5.textSize(size);
 		p5.textAlign(p5.CENTER);
 		p5.textFont(font);
 		startingPoints = font.textToPoints(string, -p5.textWidth(string) / 2, 0, size, { sampleFactor: fontSampleFactor });
@@ -77,23 +100,22 @@ export default function FlowingLogo() {
 			points[p].zOffset = p5.random();
 		}
 
-		// p5.push();
-		// p5.textSize(Math.min(convertRemToPixels(2), size/2.5));
-		// p5.translate(p5.width / 2, p5.height * 0.45);
-		// p5.fill(strokeColor);
-		// p5.textFont(fontRegular);
-		// p5.textAlign(p5.CENTER);
-		// p5.text("Perpetual Presence", 0, 33);
-		// p5.pop();
+		if (!widthProp && !heightProp) {
+			translation.x = p5.width / 2;
+			translation.y = p5.height * 0.25;
+		} else {
+			translation.x = p5.width / 2;
+			translation.y = p5.height / 2 + dY;
+		}
 	};
 
 	const draw = (p5) => {
-		// p5.background(bgColor);
 		p5.push();
-		p5.translate(p5.width / 2, p5.height * 0.25);
+		p5.translate(translation.x, translation.y);
 		p5.noFill();
 		p5.stroke(p5StrokeColor);
 		p5.strokeWeight(1);
+
 		for (let pt = 0; pt < points.length; pt++) {
 			let p = points[pt];
 			let noiseX = p.x * noiseZoom;
@@ -108,7 +130,7 @@ export default function FlowingLogo() {
 		p5.pop();
 		if (showText) {
 			p5.push();
-			p5.translate(p5.width / 2, p5.height * 0.25);
+			p5.translate(translation.x, translation.y);
 			p5.textAlign(p5.CENTER);
 			p5.textFont(fontRegular);
 			p5.stroke(fillColor);
