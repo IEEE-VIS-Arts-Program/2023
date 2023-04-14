@@ -1,11 +1,11 @@
 import styles from "../styles/Home.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import classNames from "classnames";
-import Link from "next/link";
+// import Link from "next/link";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
 import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
 import GalleryHome from "../components/GalleryHome";
 
@@ -79,12 +79,12 @@ export default function Home() {
 							Twitter: <a href="https://twitter.com/visapnet">@visapnet</a>
 						</p>
 						<p>
-							Mastodon: <a href="https://vis.social/@visapt">@@visap@vis.social</a>
+							Mastodon: <a href="https://vis.social/@visapt">@visap@vis.social</a>
 						</p>
 					</Col>
 				</Row>
 			</Container>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

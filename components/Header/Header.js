@@ -24,15 +24,19 @@ export default function Header() {
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="ms-auto">
-							{/* <Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
+							<Link href="/" className={classNames("nav-link", "reset-link")}>
+								Home
+							</Link>
+							<Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
 								Call for Entries
-							</Link> */}
-							{/* <Link href="/submission" className={classNames("nav-link", "reset-link")}>
+							</Link>
+							<Link href="/submission" className={classNames("nav-link", "reset-link")}>
 								Submission
-							</Link> */}
-							{/* <Link href="/">
-								<a className={classNames("nav-link", "reset-link")}>Home</a>
-							</Link> */}
+							</Link>
+							<Link href="/organizers" className={classNames("nav-link", "reset-link")}>
+								Organizers
+							</Link>
+							
 							
 							{/* <Link href="/contributions">
 								<a className={classNames("nav-link", "reset-link")}>

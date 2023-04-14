@@ -2,7 +2,7 @@ import styles from "./Footer.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import previousEditions from "./previous-editions.json";
 import logoVis from "../../public/images/logo-vis.svg";
-import logoTwitter from "../../public/images/logo-twitter.png";
+import logoTwitter from "../../public/images/logo-twitter dark.png";
 
 import classNames from "classnames";
 import Link from "next/link";
@@ -23,12 +23,12 @@ export default function Footer() {
 							{/* <img className={classNames(styles.logo)} src={logoVisap.src} alt="VISAP2022 logo" /> */}
 							IEEE VISAP 2023
 							<div className={classNames(styles.navigation)}>
+								<Link href="/">Home</Link>
 								<Link href="/call-for-entries">Call for Entries</Link>
 								<Link href="/submission">Submission instructions</Link>
-								{/* <Link href="/">Home</Link>
 								<Link href="/contributions">Contributions</Link>
-								<Link href="/programme">Programme</Link>
-								<Link href="/organizers">Organizers</Link>*/}
+								{/* <Link href="/programme">Programme</Link> */}
+								<Link href="/organizers">Organizers</Link>
 							</div>
 							<div className={classNames("mt-2")}>
 								<a

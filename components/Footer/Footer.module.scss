@@ -1,11 +1,9 @@
 .footer {
-	background-color: var(--bs-gray-400);
-	// color: var(--bs-light);
+	background-color: var(--bs-white);
 	:global p {
 		font-weight: 400;
 	}
 	:global a {
-		// color: var(--bs-light);
 		text-transform: none;
 		font-weight: 400;
 	}

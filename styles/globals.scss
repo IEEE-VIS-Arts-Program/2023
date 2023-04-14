@@ -9,9 +9,12 @@
 	--yellow: #FFE700;
 	--pink: #FFE9E2;
 	--dark-pink: #DABAB2;
-	--darker-pink: #CA9488; 
+	--darker-pink: #CA9488;
+	--dark-green: #757761;
+	--lapis-lazuli: #3C6997;
 	--bg: var(--pink);
 	--accent: var(--red);
+	--accent2: var(--lapis-lazuli);
 }
 
 html {
@@ -19,7 +22,6 @@ html {
 }
 
 body {
-	// font-family: "EB Garamond", serif;
 	font-family: "Sora", sans-serif;
 	font-size: 16px;
 	background-color: var(--bg);
@@ -72,7 +74,7 @@ a {
 	// bottom: -0.05rem;
 	// position: relative;
 	&:hover {
-		color: white;
+		color: var(--accent2);
 	}
 	// .reset-link {
 	// 	background: none;

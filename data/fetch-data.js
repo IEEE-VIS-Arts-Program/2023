@@ -2,11 +2,10 @@ const PublicGoogleSheetsParser = require("public-google-sheets-parser");
 const fs = require("fs");
 
 const ids = {
-	authors: "1387v6tMUWEMU5r3woD7gv3BDW6nrwWt2QaFgIZbWp1E",
-	contributions: "1IeLu5tu_CG-MwVnNTmWMiDz7jrgJkXCa-uyjARkcuHo",
-	programme: "1B6673PzL8zZ11uwZvAnA_cvH0j7-A8ZiXdhPRzUmAKI",
-	// organizers: "1uHHsAtMg7xrXUTn-D8UrG6LAMsZ9IdTgWzOldSvu0kw",
-	people: "1HRqrV6U6WpMpW0FAYIWrghaYPfInKnXPiPEbjeSdtz8"
+	authors: "1cWclIBGv4beS1-wzL0T87EISmZ1x9z3UbOWgDvg9PbQ",
+	contributions: "1GeVEZF32bms0KI7jucZDXgboOIH0T7cs68ipQZ2vke8",
+	programme: "1dgpzjSvXbRnM_zOm_MnzmJ5ePvR_YfErrKmJkhhyjpA",
+	people: "1fTq8PayGg3y3U0vUidRSj6w6UaDAEdqg0AwOn9KRR5U"
 };
 
 console.log("fetching data");
@@ -28,11 +27,6 @@ parser.parse(ids.authors).then((authors) => {
 			console.log("people");
 			parser.parse(ids.people).then((people) => {
 				fs.writeFileSync("./data/people.json", JSON.stringify(people, null, 2), { encoding: "utf8" });
-
-				// console.log("organizers");
-				// parser.parse(ids.organizers).then((organizers) => {
-				// 	fs.writeFileSync("./data/people.json", JSON.stringify(organizers, null, 2), { encoding: "utf8" });
-				// });
 			});
     });
 	});
