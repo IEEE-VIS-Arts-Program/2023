@@ -12,7 +12,7 @@ export default function Header() {
 	return (
 		<>
 			<Navbar
-				bg="transparent"
+				// bg="transparent"
 				expand="lg"
 				className={classNames(styles.headerBootstrap, "sticky-top")}
 				collapseOnSelect={true}

@@ -20,9 +20,8 @@ export default function Footer() {
 				<Row>
 					<Col xs={12} md={4} lg={3} xl={3} className={classNames("mb-5")}>
 						<div className={classNames("")}>
-							{/* <img className={classNames(styles.logo)} src={logoVisap.src} alt="VISAP2022 logo" /> */}
-							IEEE VISAP 2023
-							<div className={classNames(styles.navigation)}>
+							<h6 className={classNames("mb-3")}>IEEE VISAP 2023</h6>
+							<div className={classNames(styles.navigation, "mb-3")}>
 								<Link href="/">Home</Link>
 								<Link href="/call-for-entries">Call for Entries</Link>
 								<Link href="/submission">Submission instructions</Link>

@@ -1,15 +1,17 @@
 .headerBootstrap {
 	min-height: var(--navbar-height);
 	z-index: 2000;
-	// background: white;
-	// -webkit-backdrop-filter: blur(100px);
-	// backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	mix-blend-mode: multiply;
+	color: black;
 	&::before {
 		content: " ";
 		display: block;
 		width: 100%;
 		height: 100%;
-		// background-color: rgba(255, 255, 255, 0.7);
+		background-color: var(--accent);
+		opacity: 0.7;
 		position: absolute;
 		z-index: -1;
 	}
@@ -17,21 +19,21 @@
 	.logo {
 		height: 35px;
 	}
-	// :global .navbar-toggler {
-	// 	font-size: 0.75rem;
-	// }
+	:global .navbar-brand {
+		color: inherit;
+		&:hover {
+			color: var(--pink);
+		}
+	}
 	:global .navbar-nav {
 		:global .nav-link {
-			color: black;
-			// padding-top: 0;
-			// padding-bottom: 0;
+			color: inherit;
+
 			position: relative;
 			top: -2px;
 			&:hover {
 				background: initial;
-				-webkit-background-clip: initial;
-				-webkit-text-fill-color: initial;
-				color: #00509a;
+				color: var(--pink);
 			}
 		}
 	}
