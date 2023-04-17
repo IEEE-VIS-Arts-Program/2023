@@ -81,7 +81,7 @@ export default function Home() {
 							Twitter: <a href="https://twitter.com/visapnet">@visapnet</a>
 						</p>
 						<p>
-							Mastodon: <a href="https://vis.social/@visapt">@visap@vis.social</a>
+							Mastodon: <a href="https://vis.social/@visap">@visap@vis.social</a>
 						</p>
 					</Col>
 				</Row>

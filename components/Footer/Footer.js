@@ -2,6 +2,7 @@ import styles from "./Footer.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import previousEditions from "./previous-editions.json";
 import logoVis from "../../public/images/logo-vis.svg";
+import logoMastodon from "../../public/images/logo-mastodon.svg";
 import logoTwitter from "../../public/images/logo-twitter dark.png";
 
 import classNames from "classnames";
@@ -15,8 +16,8 @@ export default function Footer() {
 		d.fullUrl = d.url.includes("https://") ? d.url : hostName + d.url;
 	});
 	return (
-		<Container className={classNames(styles.footer, "pt-4")} fluid>
-			<Container>
+		<Container className={classNames(styles.footer, "pt-5", "pb-4")} fluid>
+			<Container className="pt-3">
 				<Row>
 					<Col xs={12} md={4} lg={3} xl={3} className={classNames("mb-5")}>
 						<div className={classNames("")}>
@@ -112,11 +113,27 @@ export default function Footer() {
 								target="_blank"
 								rel="noreferrer"
 								style={{ display: "inline-block", width: "2rem" }}
+								className={classNames("me-2")}
 							>
 								<ExportedImage
 									src={logoTwitter.src}
 									width={logoTwitter.width}
 									height={logoTwitter.height}
+									layout="responsive"
+									alt="Twitter logo"
+								/>
+							</a>
+							<a
+								href="https://vis.social/@visap"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem" }}
+								className={classNames("me-2")}
+							>
+								<ExportedImage
+									src={logoMastodon.src}
+									width={logoMastodon.width}
+									height={logoMastodon.height}
 									layout="responsive"
 									alt="Twitter logo"
 								/>

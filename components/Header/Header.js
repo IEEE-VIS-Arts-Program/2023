@@ -30,9 +30,31 @@ export default function Header() {
 							<Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
 								Call for Entries
 							</Link>
-							<Link href="/submission" className={classNames("nav-link", "reset-link")}>
-								Submission
-							</Link>
+							<NavDropdown title="Submission" id="collasible-nav-dropdown">
+								<NavDropdown.Item href="/submission#important-dates" as={DropdownItemLink} className="dropdown-item">
+									Important Dates
+								</NavDropdown.Item>
+								<NavDropdown.Item href="/submission#paper-submission" as={DropdownItemLink} className="dropdown-item">
+									Paper Submission
+								</NavDropdown.Item>
+								<NavDropdown.Item
+									href="/submission#pictorial-submission"
+									as={DropdownItemLink}
+									className="dropdown-item"
+								>
+									Pictorial Submission
+								</NavDropdown.Item>
+								<NavDropdown.Item href="/submission#artwork-submission" as={DropdownItemLink} className="dropdown-item">
+									Artwork Submission
+								</NavDropdown.Item>
+								<NavDropdown.Item
+									href="/submission#submission-procedure"
+									as={DropdownItemLink}
+									className="dropdown-item"
+								>
+									Submission Procedure
+								</NavDropdown.Item>
+							</NavDropdown>
 							<Link href="/organizers" className={classNames("nav-link", "reset-link")}>
 								Organizers
 							</Link>
@@ -58,35 +80,6 @@ export default function Header() {
 								</a>
 							</Link>
 							 */}
-							<NavDropdown title="Submission" id="collasible-nav-dropdown">
-								<NavDropdown.Item href="/submission#important-dates" as={DropdownItemLink} className="dropdown-item">
-									Important Dates
-								</NavDropdown.Item>
-								<NavDropdown.Item href="/submission#paper-submission" as={DropdownItemLink} className="dropdown-item">
-									Paper Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#pictorial-submission"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
-									Pictorial Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#artwork-submission"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
-									Artwork Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#submission-procedure"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
-									Submission Procedure
-								</NavDropdown.Item>
-							</NavDropdown>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
