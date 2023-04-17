@@ -1,49 +1,71 @@
 import styles from "./Dates.module.scss";
 import classNames from "classnames";
 import { Col, Container, Row } from "react-bootstrap";
+import Link from "next/link";
 
 export default function Dates() {
 	return (
 		<>
 			<Row>
-				<Col xs={12} md={4}>
-					<p className={classNames("mb-sm-0", "fw-bold")}>Call opening:</p>
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>Call opening:</p>
 				</Col>
-				<Col xs={12} md={4}>
+				<Col xs={12} md={6}>
 					<p>April, 2023</p>
 				</Col>
 			</Row>
 			<Row>
-				<Col xs={12} md={4}>
-					<p className={classNames("mb-sm-0", "fw-bold")}>Submissions deadline:</p>
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>Submissions deadline:</p>
 				</Col>
-				<Col xs={12} md={4}>
+				<Col xs={12} md={6}>
 					<p>June 2, 2023</p>
 				</Col>
 			</Row>
 			<Row>
-				<Col xs={12} md={4}>
-					<p className={classNames("mb-sm-0", "fw-bold")}>Acceptance notifications:</p>
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>Acceptance notifications:</p>
 				</Col>
-				<Col xs={12} md={4}>
+				<Col xs={12} md={6}>
 					<p>July 14, 2023</p>
 				</Col>
 			</Row>
 			<Row>
-				<Col xs={12} md={4}>
-					<p className={classNames("mb-sm-0", "fw-bold")}>Camera ready deadline:</p>
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>Camera ready deadline:</p>
 				</Col>
-				<Col xs={12} md={4}>
+				<Col xs={12} md={6}>
 					<p>August 14, 2023</p>
 				</Col>
 			</Row>
 			<Row>
-				<p>
-					All submissions are due by June 2, 2023{" "}
-					<a href="https://www.worldtimeserver.com/time-zones/aoe/#:~:text=The%20current%20time%20and%20date%20right%20now&text=Anywhere%20on%20Earth%20or%20AoE,offset%20of%20%2D%2012%3A00">
-						AOE
-					</a>
-					, using the Precision Conference System (PCS) (the system will open for submissions mid April).
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>Exhibition materials submission:</p>
+				</Col>
+				<Col xs={12} md={6}>
+					<p>August 14, 2023</p>
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12} md={6}>
+					<p className={classNames("mb-1", "fw-bold")}>VISAP exhibition</p>
+				</Col>
+				<Col xs={12} md={6}>
+					<p>
+						October 2 - October 29, 2023;{" "}
+						<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
+							Library at the Dock
+						</a>
+					</p>
+				</Col>
+			</Row>
+			<Row>
+				<p className={classNames("mt-2", "mb-3")}>
+					All submissions are due by June 2, 2023; 11:59pm (23:59){" "}
+					<a href="https://time.is/Anywhere_on_Earth">Anywhere On Earth (AOE)</a>, using the{" "}
+					<a href="https://new.precisionconference.com/submissions">Precision Conference System (PCS)</a>. Please see
+					the <Link href="/call-for-entries">Call for Entries</Link> for more details on how to submit a paper,
+					pictorial or artwork.
 				</p>
 			</Row>
 		</>

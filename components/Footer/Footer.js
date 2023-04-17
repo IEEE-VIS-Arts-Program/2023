@@ -29,37 +29,6 @@ export default function Footer() {
 								{/* <Link href="/programme">Programme</Link> */}
 								<Link href="/organizers">Organizers</Link>
 							</div>
-							<div className={classNames("mt-2")}>
-								<a
-									href="http://ieeevis.org/year/2023/welcome"
-									target="_blank"
-									rel="noreferrer"
-									style={{ display: "inline-block", width: "2rem" }}
-									className={classNames("me-2")}
-								>
-									<ExportedImage
-										src={logoVis.src}
-										layout="responsive"
-										width={logoVis.width}
-										height={logoVis.height}
-										alt="IEEE VIS logo"
-									/>
-								</a>
-								<a
-									href="https://twitter.com/visapnet"
-									target="_blank"
-									rel="noreferrer"
-									style={{ display: "inline-block", width: "2rem" }}
-								>
-									<ExportedImage
-										src={logoTwitter.src}
-										width={logoTwitter.width}
-										height={logoTwitter.height}
-										layout="responsive"
-										alt="Twitter logo"
-									/>
-								</a>
-							</div>
 						</div>
 					</Col>
 					<Col xs={12} md={4} lg={4} xl={6} className={classNames("mb-5")}>
@@ -121,6 +90,38 @@ export default function Footer() {
 								</span>
 							))}
 						</p>
+						<p><a href="mailto:art@ieeevis.org">art@ieeevis.org</a></p>
+						<div className={classNames("mt-2")}>
+							<a
+								href="http://ieeevis.org/year/2023/welcome"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem" }}
+								className={classNames("me-2")}
+							>
+								<ExportedImage
+									src={logoVis.src}
+									layout="responsive"
+									width={logoVis.width}
+									height={logoVis.height}
+									alt="IEEE VIS logo"
+								/>
+							</a>
+							<a
+								href="https://twitter.com/visapnet"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem" }}
+							>
+								<ExportedImage
+									src={logoTwitter.src}
+									width={logoTwitter.width}
+									height={logoTwitter.height}
+									layout="responsive"
+									alt="Twitter logo"
+								/>
+							</a>
+						</div>
 					</Col>
 				</Row>
 			</Container>

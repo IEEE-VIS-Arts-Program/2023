@@ -3,6 +3,8 @@ import Dates from "../components/Dates";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
+// import BlurredSeparator from "../components/BlurredSeparator/BlurredSeparator";
 
 export default function Submission() {
 	const [sections, setSections] = useState();
@@ -18,9 +20,13 @@ export default function Submission() {
 	return (
 		<PageTemplate metaTitle="Submission" submenu={sections}>
 			<h1 className={classNames("page-title")}>Submitting to VISAP 2023</h1>
-			<h3>Important Dates</h3>
+			<h3 className={classNames("pt-3")} id="important-dates">
+				Important Dates
+			</h3>
 			<Dates />
-			<h3>Paper Submission</h3>
+			<h3 className={classNames("pt-3")} id="paper-submission">
+				Paper Submission
+			</h3>
 			<p>
 				We invite researchers, scholars, and creative practitioners to submit papers related to the theme{" "}
 				<i>Perpetual Presence</i>. Submissions can include, but are not limited to technical descriptions of creative
@@ -63,7 +69,10 @@ export default function Submission() {
 				<a href="http://visap.uic.edu/2013/#program">2013</a>) for examples of accepted submissions. (Selected VISAP
 				papers have also been featured in IEEE Computer Graphics and Applications and Leonardo).
 			</p>
-			<h3>Pictorial Submission</h3>
+			{/* <BlurredSeparator /> */}
+			<h3 className={classNames("pt-3")} id="pictorial-submission">
+				Pictorial Submission
+			</h3>
 			<p>
 				We invite artists and designers to submit pictorials and annotated portfolios related to the theme{" "}
 				<i>Perpetual Presence</i>. Artists, designers, and researchers all make creative choices based on practical
@@ -78,7 +87,7 @@ export default function Submission() {
 				explorations, and the design process (Löwgren 2013). Through pictorials and annotated portfolios, we invite
 				submissions that communicate the visualization practices in rich, heavily visual ways.
 			</p>
-			<h3>What to Consider</h3>
+			<h6>What to Consider</h6>
 			<p>Elements that reviewers will look for include:</p>
 			<ul>
 				<li>The quality of the description of the design process and reflections on this process</li>
@@ -86,7 +95,7 @@ export default function Submission() {
 				<li>The quality of presentation</li>
 				<li>The production value of images, photos and diagrams</li>
 			</ul>
-			<h3>What is a Pictorial / Annotated Portfolio?</h3>
+			<h6>What is a Pictorial / Annotated Portfolio?</h6>
 			<p>
 				A pictorial is a visual description and reflection of the design process of a single visualization project. It
 				is intended to capture the situated and rich nature of design. See DIS Pictorials for inspiration.
@@ -97,7 +106,7 @@ export default function Submission() {
 				the artifacts are part of the contribution. Submitters are encouraged to highlight important features, discuss
 				how ideas were developed, and reflect on recurring topics through their series of works.
 			</p>
-			<h3>Pictorial Format</h3>
+			<h6>Pictorial Format</h6>
 			<p>
 				Artists and designers are required to use the VISAP Pictorials format for pictorial and annotated portfolio
 				submissions. <a href="https://visap.net/VISAP_pictorial_Indd.zip">InDesign</a> and{" "}
@@ -112,7 +121,7 @@ export default function Submission() {
 				Submitting supplementary material and/or links to external material is encouraged to help reviewers evaluate the
 				submission.
 			</p>
-			<h3>Previous Accepted Work</h3>
+			<h6>Previous Accepted Works</h6>
 			<p>
 				Please see the five pictorials (<a href="http://visap.net/2018/media/Cruz-VISAP18-AP.pdf">1</a>,{" "}
 				<a href="http://visap.net/2018/media/Bihanic-VISAP18-AP.pdf">2</a>,{" "}
@@ -138,14 +147,17 @@ export default function Submission() {
 				<a href="https://ieeexplore.ieee.org/document/9975443">3</a>) in the{" "}
 				<a href="https://visap.net/2022/programme">2022 program</a>.
 			</p>
-			<h3>Pictorial Acceptance</h3>
+			<h6>Pictorial Acceptance</h6>
 			<p>
 				All accepted Pictorials will be published online in the IEEE VIS 2023 Arts Program proceedings, and indexed in
 				the IEEE Xplore digital library. Pictorials will be part of the VISAP 2023 exhibition as printed booklets and
 				showcased in the VISAP 2023 catalog, which will be available both online and in print. Selected submissions will
 				be invited to present their work in-person in one of the VISAP Papers sessions during the conference.
 			</p>
-			<h3>Artwork Submission</h3>
+			{/* <BlurredSeparator /> */}
+			<h3 className={classNames("pt-3")} id="artwork-submission">
+				Artwork Submission
+			</h3>
 			<p>
 				We invite artists and designers to submit data-driven artworks related to the theme Perpetual Presence. We
 				welcome submissions in any medium, e.g., interactive projections, multimedia sculptures, mobile devices,
@@ -200,7 +212,7 @@ export default function Submission() {
 				<li>Digital humanities visualization</li>
 				<li>Physical visualization and sculptural design</li>
 			</ul>
-			<h3>Submission Format (Exhibition)</h3>
+			<h6>Submission Format (Exhibition)</h6>
 			<p>
 				Artists and designers are required to submit a 2 page .pdf file describing the work they wish to exhibit. No
 				specific format is imposed.
@@ -228,13 +240,21 @@ export default function Submission() {
 			</p>
 			<h6>Acceptance</h6>
 			<p>
-				All accepted works will be included in the online proceedings of VISAP on the visap.net website, as well as in a
-				VISAP 2023 catalog that will be shared on the visap website. In addition to accepting installations that may be
-				featured on the in-person or online exhibition, some artworks may be selected for artist talks during the week
-				of the IEEE VIS conference. Performance submissions may also be scheduled for specific times during the
-				exhibition. Artists will work with the VISAP organizers on the details for showcasing their artworks in the
-				online exhibition. Artists and authors are strongly encouraged to participate in the VISAP program throughout
-				the week.
+				All accepted artworks will be included in the online proceedings of VISAP on the{" "}
+				<a href="https://visap.net/2023/">visap.net</a> website, as well as in a VISAP 2023 catalog that will be shared
+				on the VISAP website. All accepted artworks will be presented in the gallery space of the{" "}
+				<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
+					Library at the Docs
+				</a>
+				from October 2 to October 29, 2023. This means that, in contrast to previous years, the VISAP exhibition will be
+				open prior to the conference, and remain open for almost one month.
+			</p>
+			<p>
+				The official opening of the exhibition will take place during the week of the VIS conference (presumably
+				Tuesday, October 24, 2023. Some artworks may be selected for artist talks during the week of the IEEE VIS
+				conference. Performance submissions may also be scheduled for specific times during the exhibition. Artists will
+				work with the VISAP organizers on the details for showcasing their artworks. Artists and authors are strongly
+				encouraged to participate in the VISAP program throughout the week.
 			</p>
 			<p>
 				No artist fees or travel costs are provided. There are some complimentary registrations available for selected
@@ -242,19 +262,24 @@ export default function Submission() {
 				institutions.
 			</p>
 			<p>The VISAP 2023 exhibition chairs will contact the exhibitors upon acceptance.</p>
-			<h3>Submission Procedure (for all tracks)</h3>
+			{/* <BlurredSeparator /> */}
+			<h3 className={classNames("pt-3")} id="submission-procedure">
+				Submission Procedure (for all tracks)
+			</h3>
 			<p>
-				All submissions must be made using the IEEE VGTC Electronic Conference System (on PCS). After creating an
-				account or signing in, submitters will find the VISAP 2023 Papers and Exhibition submissions by:
+				All submissions must be made using the{" "}
+				<a href="https://new.precisionconference.com/submissions">IEEE VGTC Electronic Conference System (on PCS)</a>.
+				After creating an account or signing in, submitters will find the VISAP 2023 Papers and Exhibition submissions
+				by:
 			</p>
 			<ol>
 				<li>Clicking on the “Submissions” tab</li>
-				<li>Selecting the VIS 2023 conference, and</li>
-				<li>Selecting “VIS 2023 VISAP”, and finally clicking on “Go”</li>
+				<li>
+					Selecting VTGC (in “Society”); VIS 2023 (for “Conference/Journal”), and VIS 2023 Arts Program (for “Track”),
+					and
+				</li>
+				<li>Clicking on “Go”</li>
 			</ol>
-			<p>
-				<strong>The submission system opens mid April.</strong>
-			</p>
 			<p>VISAP uses a single-blind review process: submitted material is not required to be anonymized.</p>
 			<p>
 				At least one author per accepted paper and pictorial is required to register to the IEEE VIS conference to

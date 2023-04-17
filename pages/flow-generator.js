@@ -72,7 +72,6 @@ Bye 😶‍🌫️`;
 		if (lineSpeed) {
 			setLineSpeed(Number(lineSpeed));
 		}
-		
 	}, [router.query]);
 	return (
 		<>

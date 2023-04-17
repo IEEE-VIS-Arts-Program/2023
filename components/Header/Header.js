@@ -36,8 +36,7 @@ export default function Header() {
 							<Link href="/organizers" className={classNames("nav-link", "reset-link")}>
 								Organizers
 							</Link>
-							
-							
+
 							{/* <Link href="/contributions">
 								<a className={classNames("nav-link", "reset-link")}>
 									Contributions
@@ -59,19 +58,11 @@ export default function Header() {
 								</a>
 							</Link>
 							 */}
-							{/* <NavDropdown title="Submission" id="collasible-nav-dropdown">
-								<NavDropdown.Item
-									href="/submission#important-dates"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
+							<NavDropdown title="Submission" id="collasible-nav-dropdown">
+								<NavDropdown.Item href="/submission#important-dates" as={DropdownItemLink} className="dropdown-item">
 									Important Dates
 								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#paper-submission"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
+								<NavDropdown.Item href="/submission#paper-submission" as={DropdownItemLink} className="dropdown-item">
 									Paper Submission
 								</NavDropdown.Item>
 								<NavDropdown.Item
@@ -82,7 +73,7 @@ export default function Header() {
 									Pictorial Submission
 								</NavDropdown.Item>
 								<NavDropdown.Item
-									href="/submission#exhibition-submission"
+									href="/submission#artwork-submission"
 									as={DropdownItemLink}
 									className="dropdown-item"
 								>
@@ -95,7 +86,7 @@ export default function Header() {
 								>
 									Submission Procedure
 								</NavDropdown.Item>
-							</NavDropdown> */}
+							</NavDropdown>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

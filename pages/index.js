@@ -1,13 +1,14 @@
 import styles from "../styles/Home.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import classNames from "classnames";
-// import Link from "next/link";
+import Link from "next/link";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import ExportedImage from "next-image-export-optimizer";
 import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
 import GalleryHome from "../components/GalleryHome";
+import Dates from "../components/Dates";
 
 export default function Home() {
 	return (
@@ -43,12 +44,15 @@ export default function Home() {
 							in order to foster discussion and collaboration between fields of research and practice.
 						</p>
 						<p>
-							<strong>The theme for IEEE VISAP 2023 is <i>Perpetual Presence</i>.</strong> Data is all around us, a perpetual and ubiquitous
-							digital stream of meaning that permeates throughout the ambient informatic which backgrounds our
-							societies. <i>Perpetual Presence</i> acknowledges the transformative potential of data as influencing cultural,
-							economical and political landscapes. If ‘presence’ is a state of being, of becoming, and of responding to
-							the intersectionality of realities, then <i>Perpetual Presence</i> is an aesthetic in which data abundantly
-							flourishes in ways that extend our understanding of the world.
+							<strong>
+								The theme for IEEE VISAP 2023 is <i>Perpetual Presence</i>.
+							</strong>{" "}
+							Data is all around us, a perpetual and ubiquitous digital stream of meaning that permeates throughout the
+							ambient informatic which backgrounds our societies. <i>Perpetual Presence</i> acknowledges the
+							transformative potential of data as influencing cultural, economical and political landscapes. If
+							‘presence’ is a state of being, of becoming, and of responding to the intersectionality of realities, then{" "}
+							<i>Perpetual Presence</i> is an aesthetic in which data abundantly flourishes in ways that extend our
+							understanding of the world.
 						</p>
 						<p>
 							VISAP’23 invites research papers, pictorials, and artwork submissions for presentation in two interrelated
@@ -66,10 +70,8 @@ export default function Home() {
 							Accepted works will be published on the official VISAP website and in a dedicated exhibition catalogue.
 							Papers and pictorials will be indexed in the IEEE Xplore digital library.
 						</p>
-						<p>
-							The submission deadline for all tracks is in June 2023. Details on how to submit a paper, pictorial or
-							artwork will follow soon.
-						</p>
+						<h3>Important Dates</h3>
+						<Dates/>
 						<h5 className={classNames("mt-4")}>Some works from VISAP 2022</h5>
 						<GalleryHome className={classNames("mt-2", "mb-4")} />
 						<p>
