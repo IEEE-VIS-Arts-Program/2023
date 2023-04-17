@@ -3,8 +3,7 @@ import Dates from "../components/Dates";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
-// import BlurredSeparator from "../components/BlurredSeparator/BlurredSeparator";
+import BlurredSeparator from "../components/BlurredSeparator/BlurredSeparator";
 
 export default function Submission() {
 	const [sections, setSections] = useState();
@@ -69,7 +68,7 @@ export default function Submission() {
 				<a href="http://visap.uic.edu/2013/#program">2013</a>) for examples of accepted submissions. (Selected VISAP
 				papers have also been featured in IEEE Computer Graphics and Applications and Leonardo).
 			</p>
-			{/* <BlurredSeparator /> */}
+			<BlurredSeparator />
 			<h3 className={classNames("pt-3")} id="pictorial-submission">
 				Pictorial Submission
 			</h3>
@@ -154,7 +153,7 @@ export default function Submission() {
 				showcased in the VISAP 2023 catalog, which will be available both online and in print. Selected submissions will
 				be invited to present their work in-person in one of the VISAP Papers sessions during the conference.
 			</p>
-			{/* <BlurredSeparator /> */}
+			<BlurredSeparator />
 			<h3 className={classNames("pt-3")} id="artwork-submission">
 				Artwork Submission
 			</h3>
@@ -262,7 +261,7 @@ export default function Submission() {
 				institutions.
 			</p>
 			<p>The VISAP 2023 exhibition chairs will contact the exhibitors upon acceptance.</p>
-			{/* <BlurredSeparator /> */}
+			<BlurredSeparator />
 			<h3 className={classNames("pt-3")} id="submission-procedure">
 				Submission Procedure (for all tracks)
 			</h3>
