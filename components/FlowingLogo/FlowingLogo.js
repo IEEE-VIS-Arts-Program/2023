@@ -31,12 +31,12 @@ const strokeAlpha = 255; //the alpha of the lines (lower numbers are more transp
 let p5FillColor, p5StrokeColor;
 
 const fontSampleFactor = 0.15; //How many points there are: the higher the number, the closer together they are (more detail)
-const noiseZoom = 0.005; //how zoomed in the perlin noise is
-const noiseOctaves = 4; //The number of octaves for the noise
-const noiseFalloff = 3; //The falloff for the noise layers default 0.5
-const zOffsetChange = 0; //How much the noise field changes in the z direction each frame default 0
-const individualZOffset = 0.001; //how far away the points/lines are from each other in the z noise axies (the bigger the number, the more chaotic)
-const lineSpeed = 0.25; //the maximum amount each point can move each frame
+// const noiseZoom = 0.005; //how zoomed in the perlin noise is
+// const noiseOctaves = 4; //The number of octaves for the noise
+// const noiseFalloff = 3; //The falloff for the noise layers default 0.5
+// const zOffsetChange = 0; //How much the noise field changes in the z direction each frame default 0
+// const individualZOffset = 0.001; //how far away the points/lines are from each other in the z noise axies (the bigger the number, the more chaotic)
+// const lineSpeed = 0.25; //the maximum amount each point can move each frame
 
 let font,
 	fontRegular,
@@ -44,8 +44,20 @@ let font,
 	startingPoints,
 	img;
 
-export default function FlowingLogo({ phrase, noiseZoomProp, fontSizeProp, noiseOctavesProp, dYProp, widthProp, heightProp }) {
-	let string = "VISAP23"; //words to be displayed
+export default function FlowingLogo({
+	phrase,
+	fontSizeProp,
+	dYProp,
+	noiseZoomProp,
+	noiseOctavesProp,
+	noiseFalloffProp,
+	zOffsetChangeProp,
+	individualZOffsetProp,
+	lineSpeedProp,
+	widthProp,
+	heightProp,
+}) {
+	let string = "VISAP2023"; //words to be displayed
 	if (phrase) {
 		string = phrase;
 	}
@@ -53,9 +65,25 @@ export default function FlowingLogo({ phrase, noiseZoomProp, fontSizeProp, noise
 	if (noiseZoomProp) {
 		noiseZoom = Number(noiseZoomProp);
 	}
-	let noiseOctaves = 0.005; //how zoomed in the perlin noise is
+	let noiseOctaves = 4; //how zoomed in the perlin noise is
 	if (noiseOctavesProp) {
 		noiseOctaves = Number(noiseOctavesProp);
+	}
+	let noiseFalloff = 0.25; //how zoomed in the perlin noise is
+	if (noiseFalloffProp) {
+		noiseFalloff = Number(noiseFalloffProp);
+	}
+	let zOffsetChange = 0; //how zoomed in the perlin noise is
+	if (zOffsetChangeProp) {
+		zOffsetChange = Number(zOffsetChangeProp);
+	}
+	let individualZOffset = 0.01; //how zoomed in the perlin noise is
+	if (individualZOffsetProp) {
+		individualZOffset = Number(individualZOffsetProp);
+	}
+	let lineSpeed = 0.25; //how zoomed in the perlin noise is
+	if (lineSpeedProp) {
+		lineSpeed = Number(lineSpeedProp);
 	}
 	let dY = 0;
 	if (dYProp) {
