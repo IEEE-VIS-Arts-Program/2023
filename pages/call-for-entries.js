@@ -87,7 +87,7 @@ export default function Submission() {
 				Accepted submissions to the paper and to the pictorial tracks will be presented during the IEEE VIS conference
 				VISAP sessions. Accepted exhibits will be displayed from October 4 - October 29, 2023 at the{" "}
 				<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
-					Library at the Dock
+					Library at the Doc Gallery
 				</a>
 				gallery space. Pictorials may be displayed in printed forms at the opening reception; and exhibits may be
 				offered an opportunity to be presented during the IEEE VIS conference VISAP sessions.

@@ -54,7 +54,7 @@ export default function Dates() {
 					<p>
 						October 2 - October 29, 2023;{" "}
 						<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
-							Library at the Dock
+							Library at the Doc Gallery
 						</a>
 					</p>
 				</Col>

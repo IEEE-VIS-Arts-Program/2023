@@ -179,12 +179,12 @@ export default function Submission() {
 					visual analytics. Discuss the reception of your work at previous exhibitions (if it has been exhibited before)
 				</li>
 				<li>
-					<strong>Technical Requirements</strong>: Given that VISAP’ 22 is taking place in a hybrid format, describe how
-					the work will be presented for online viewing and/or in-person. Provide technical details of the project. For
-					instance, can your exhibit be viewable online? Does it require the audience to interact with it live? Are
-					there any time of day requirements? Does it require any specific space or technical setup (e.g. VR gadgets or
-					audiovisual equipment)? Consider how your artwork could be integrated in both a physical and virtual art
-					exhibition
+					<strong>Technical Requirements</strong>: Given that VISAP’ 23 is an in-person event, describe how the work
+					will be presented at the gallery space. Provide technical details of the project. For example, what technical
+					equipment is required? Does the project require the audience to interact with it live? Are there any time of
+					day requirements or specific lighting conditions needed? Does it require any specific space or technical setup
+					(e.g. VR gadgets or audiovisual equipment)? Consider how your artwork could be integrated in both a physical
+					and virtual art exhibition.
 				</li>
 				<li>
 					<strong>Supporting Material</strong>: Provide links to high-resolution images, audio, webpages and/or videos
