@@ -4,8 +4,10 @@ import classNames from "classnames";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import BlurredSeparator from "../components/BlurredSeparator/BlurredSeparator";
+import { useRouter } from "next/router";
 
 export default function Submission() {
+	const { basePath } = useRouter();
 	const [sections, setSections] = useState();
 	useEffect(() => {
 		let _sections = Array.from(document.querySelectorAll("h3")).filter((d) => d.hasAttribute("id"));
@@ -108,8 +110,8 @@ export default function Submission() {
 			<h6>Pictorial Format</h6>
 			<p>
 				Artists and designers are required to use the VISAP Pictorials format for pictorial and annotated portfolio
-				submissions. <a href="https://visap.net/VISAP_pictorial_Indd.zip">InDesign</a> and{" "}
-				<a href="https://visap.net/VISAP_pictorial_Word.zip">Word</a> templates are available. It is mandatory to use
+				submissions. <a href={`${basePath}/VISAP_pictorial_Indd.zip`}>InDesign</a> and{" "}
+				<a href={`${basePath}/https://visap.net/VISAP_pictorial_Word.zip`}>Word</a> templates are available. It is mandatory to use
 				this format.
 			</p>
 			<p>
