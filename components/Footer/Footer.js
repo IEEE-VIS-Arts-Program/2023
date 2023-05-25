@@ -97,14 +97,13 @@ export default function Footer() {
 								href="http://ieeevis.org/year/2023/welcome"
 								target="_blank"
 								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem" }}
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
 								<ExportedImage
 									src={logoVis.src}
-									layout="responsive"
-									width={logoVis.width}
-									height={logoVis.height}
+									fill={true}
+									style={{objectFit: "contain"}}
 									alt="IEEE VIS logo"
 								/>
 							</a>
@@ -112,14 +111,13 @@ export default function Footer() {
 								href="https://twitter.com/visapnet"
 								target="_blank"
 								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem" }}
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
 								<ExportedImage
 									src={logoTwitter.src}
-									width={logoTwitter.width}
-									height={logoTwitter.height}
-									layout="responsive"
+									fill={true}
+									style={{objectFit: "contain"}}
 									alt="Twitter logo"
 								/>
 							</a>
@@ -127,14 +125,13 @@ export default function Footer() {
 								href="https://vis.social/@visap"
 								target="_blank"
 								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem" }}
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
 								<ExportedImage
 									src={logoMastodon.src}
-									width={logoMastodon.width}
-									height={logoMastodon.height}
-									layout="responsive"
+									fill={true}
+									style={{objectFit: "contain"}}
 									alt="Twitter logo"
 								/>
 							</a>
