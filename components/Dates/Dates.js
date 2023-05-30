@@ -19,7 +19,7 @@ export default function Dates() {
 					<p className={classNames("mb-1", "fw-bold")}>Submissions deadline:</p>
 				</Col>
 				<Col xs={12} md={6}>
-					<p>June 2, 2023</p>
+					<p><del>June 2, 2023</del> June 6, 2023</p>
 				</Col>
 			</Row>
 			<Row>
