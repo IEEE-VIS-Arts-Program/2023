@@ -173,6 +173,12 @@
   },
   {
     "role": "Program Committee",
+    "name": "Angus",
+    "surname": "Forbes",
+    "affiliation": "Purdue University"
+  },
+  {
+    "role": "Program Committee",
     "name": "Till",
     "surname": "Nagel",
     "affiliation": "University of Applied Sciences Mannheim"
@@ -284,5 +290,26 @@
     "name": "Daniele",
     "surname": "Profeta",
     "affiliation": "School of Architecture, Syracuse University, New York"
+  },
+  {
+    "role": "Program Committee",
+    "name": "Selen",
+    "surname": "Turkay",
+    "affiliation": "School of Computer Science, Queensland University of Technology",
+    "website": "selen.turkay@qut.edu.au"
+  },
+  {
+    "role": "Program Committee",
+    "name": "Alison",
+    "surname": "Bennett",
+    "affiliation": "School of Art, RMIT University",
+    "website": "alison.bennett@rmit.edu.au"
+  },
+  {
+    "role": "Program Committee",
+    "name": "Paul",
+    "surname": "Van Opdenbosch",
+    "affiliation": "School of Creative Practice, Queensland University of Technology",
+    "website": "paul.vanopdenbosch@qut.edu.au"
   }
 ]
