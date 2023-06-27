@@ -35,7 +35,7 @@ export default function Home() {
 					>
 						<FlowingLogo />
 						<h2 className={classNames("mt-4", "mb-1")}>IEEE VISAP 2023 - Perpetual Presence</h2>
-						<h6 className={classNames("mb-5")}>Melbourne (VIC), Australia, 22—27 October 2023</h6>
+						<h6 className={classNames("mb-5")}>04—29 October 2023, Library at the Dock Gallery<br/>Melbourne (VIC), Australia</h6>
 						<p>
 							The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 							<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization

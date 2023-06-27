@@ -52,7 +52,7 @@ export default function Dates() {
 				</Col>
 				<Col xs={12} md={6}>
 					<p>
-						October 2 - October 29, 2023;{" "}
+						Wednesday 4 October - Sunday 29 October 2023 <br/>
 						<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
 							Library at the Doc Gallery
 						</a>
