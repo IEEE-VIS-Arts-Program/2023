@@ -19,7 +19,7 @@ export default function Footer() {
 		<Container className={classNames(styles.footer, "pt-5", "pb-4")} fluid>
 			<Container className="pt-3">
 				<Row>
-					<Col xs={12} md={4} lg={3} xl={3} className={classNames("mb-5")}>
+					<Col xs={12} md={4} lg={4} xl={4} className={classNames("mb-5")}>
 						<div className={classNames("")}>
 							<h6 className={classNames("mb-3")}>IEEE VISAP 2023</h6>
 							<div className={classNames(styles.navigation, "mb-3")}>
@@ -32,7 +32,45 @@ export default function Footer() {
 							</div>
 						</div>
 					</Col>
-					<Col xs={12} md={4} lg={4} xl={6} className={classNames("mb-5")}>
+
+					<Col xs={12} md={4} lg={4} xl={4} className={classNames("mb-5")}>
+						<h6 className={classNames("mb-3")}>Contacts</h6>
+						<p>
+							Email: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>
+							<br />
+							Twitter: <a href="https://twitter.com/visapnet">@visapnet</a>
+							<br />
+							Mastodon: <a href="https://vis.social/@visap">@visap@vis.social</a>
+						</p>
+						<div className={classNames("mt-3")}>
+							<a
+								href="http://ieeevis.org/year/2023/welcome"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
+								className={classNames("me-2")}
+							>
+								<ExportedImage src={logoVis.src} fill={true} style={{ objectFit: "contain" }} alt="IEEE VIS logo" />
+							</a>
+							<a
+								href="https://twitter.com/visapnet"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
+								className={classNames("me-2")}
+							>
+								<ExportedImage src={logoTwitter.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+							</a>
+							<a
+								href="https://vis.social/@visap"
+								target="_blank"
+								rel="noreferrer"
+								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
+								className={classNames("me-2")}
+							>
+								<ExportedImage src={logoMastodon.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+							</a>
+						</div>
 						{/* <h6 className={classNames("mb-3")}>Supporters</h6>
 						<p>TBA</p>
 						<div className="logos mb-3">
@@ -79,7 +117,8 @@ export default function Footer() {
 							</a>
 						</div> */}
 					</Col>
-					<Col xs={12} md={4} lg={3} xl={3} className={classNames("mb-5")}>
+
+					<Col xs={12} md={4} lg={4} xl={4} className={classNames("mb-5")}>
 						<h6 className={classNames("mb-3")}>Previous editions</h6>
 						<p>
 							{previousEditions.map((d, i) => (
@@ -91,51 +130,6 @@ export default function Footer() {
 								</span>
 							))}
 						</p>
-						<p><a href="mailto:art@ieeevis.org">art@ieeevis.org</a></p>
-						<div className={classNames("mt-2")}>
-							<a
-								href="http://ieeevis.org/year/2023/welcome"
-								target="_blank"
-								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
-								className={classNames("me-2")}
-							>
-								<ExportedImage
-									src={logoVis.src}
-									fill={true}
-									style={{objectFit: "contain"}}
-									alt="IEEE VIS logo"
-								/>
-							</a>
-							<a
-								href="https://twitter.com/visapnet"
-								target="_blank"
-								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
-								className={classNames("me-2")}
-							>
-								<ExportedImage
-									src={logoTwitter.src}
-									fill={true}
-									style={{objectFit: "contain"}}
-									alt="Twitter logo"
-								/>
-							</a>
-							<a
-								href="https://vis.social/@visap"
-								target="_blank"
-								rel="noreferrer"
-								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
-								className={classNames("me-2")}
-							>
-								<ExportedImage
-									src={logoMastodon.src}
-									fill={true}
-									style={{objectFit: "contain"}}
-									alt="Twitter logo"
-								/>
-							</a>
-						</div>
 					</Col>
 				</Row>
 			</Container>

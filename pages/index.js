@@ -98,16 +98,6 @@ export default function Home() {
 								</Col>
 							</Row>
 						</Container>
-						https://www.monash.edu/
-						<p>
-							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
-						</p>
-						<p>
-							Twitter: <a href="https://twitter.com/visapnet">@visapnet</a>
-						</p>
-						<p>
-							Mastodon: <a href="https://vis.social/@visap">@visap@vis.social</a>
-						</p>
 					</Col>
 				</Row>
 			</Container>
