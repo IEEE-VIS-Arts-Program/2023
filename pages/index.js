@@ -1,7 +1,6 @@
 import styles from "../styles/Home.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import classNames from "classnames";
-import Link from "next/link";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -9,6 +8,9 @@ import Footer from "../components/Footer";
 import FlowingLogo from "../components/FlowingLogo/FlowingLogo";
 import GalleryHome from "../components/GalleryHome";
 import Dates from "../components/Dates";
+import ExportedImage from "next-image-export-optimizer";
+import logoMonashUni from "../public/images/logo-monash-university.png";
+import logoSMU from "../public/images/logo-smu.png";
 
 export default function Home() {
 	return (
@@ -35,7 +37,11 @@ export default function Home() {
 					>
 						<FlowingLogo />
 						<h2 className={classNames("mt-4", "mb-1")}>IEEE VISAP 2023 - Perpetual Presence</h2>
-						<h6 className={classNames("mb-5")}>04—29 October 2023, Library at the Dock Gallery<br/>Melbourne (VIC), Australia</h6>
+						<h6 className={classNames("mb-5")}>
+							04—29 October 2023, Library at the Dock Gallery
+							<br />
+							Melbourne (VIC), Australia
+						</h6>
 						<p>
 							The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 							<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
@@ -71,9 +77,28 @@ export default function Home() {
 							Papers and pictorials will be indexed in the IEEE Xplore digital library.
 						</p>
 						<h3>Important Dates</h3>
-						<Dates/>
+						<Dates />
 						<h5 className={classNames("mt-4")}>Some works from VISAP 2022</h5>
 						<GalleryHome className={classNames("mt-2", "mb-4")} />
+						<h3>Supporters</h3>
+						<p>VISAP 2023 is possible thanks to the support of:</p>
+						<Container className="mb-3">
+							<Row>
+								<Col xs={10} md={6} className={classNames(styles.logo, "mb-4 py-2 rounded")}>
+									<a className="logo" href="https://www.monash.edu/" target="_blank" rel="noreferrer">
+										<ExportedImage src={logoMonashUni} alt="Logo of Monash University" layout="responsive" />
+									</a>
+								</Col>
+							</Row>
+							<Row>
+								<Col xs={8} md={3} className={classNames(styles.logo, "mb-4 p-4 rounded")}>
+									<a className="logo" href="https://smallmultiples.com.au/" target="_blank" rel="noreferrer">
+										<ExportedImage src={logoSMU} alt="Logo of Small Multiple Studio" layout="responsive" />
+									</a>
+								</Col>
+							</Row>
+						</Container>
+						https://www.monash.edu/
 						<p>
 							Contact: <a href="mailto:art@ieeevis.org">art@ieeevis.org</a>{" "}
 						</p>
