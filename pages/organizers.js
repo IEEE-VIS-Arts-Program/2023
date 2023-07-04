@@ -14,24 +14,19 @@ export default function Organizers() {
 		<PageTemplate metaTitle="Organizers">
 			<h1 className={classNames("page-title")}>Organizers</h1>
 			{people.map((role, i) => (
-				<div key={i} className={classNames("mb-5")}>
+				<div key={i} className={classNames("mb-3")}>
 					<h5>{role[0]}</h5>
 					{role[1].map((person, i) => (
-						<div key={i}>
-							<p className={classNames("mb-2")}>
+						<div key={i} className={classNames("mb-3")}>
+							<p className={classNames("mb-0")}>
 								{person["name"]} {person["surname"]}
-								{person["affiliation"] && (
-									<>
-										{" "}– <i>{person["affiliation"]}</i>
-									</>
-								)}
+							</p>
+							<p className={classNames("mb-0", "small")}>{person["affiliation"] && <i>{person["affiliation"]}</i>}</p>
+							<p className={classNames("mb-0", "small")}>
 								{person["website"] && (
-									<>
-										<br />
-										<a href={person["website"]} style={{ textTransform: "initial" }}>
-											{person["website"].replace("https://", "").replace("http://", "").replace("www.", "")}
-										</a>
-									</>
+									<a href={person["website"]} style={{ textTransform: "initial" }}>
+										{person["website"].replace("https://", "").replace("http://", "").replace("www.", "")}
+									</a>
 								)}
 							</p>
 						</div>
