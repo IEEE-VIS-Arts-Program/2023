@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function FlowGenerator() {
 	const router = useRouter();
+	const { basePath } = useRouter();
 	const [phrase, setPhrase] = useState("PERLIN NOISE");
 	const [fontSize, setFontSize] = useState();
 	const [dY, setDY] = useState();
@@ -15,7 +16,9 @@ export default function FlowGenerator() {
 	const [zOffsetChange, setZOffsetChange] = useState();
 	const [individualZOffset, setIndividualZOffset] = useState();
 	const [lineSpeed, setLineSpeed] = useState();
-	
+	const [bgColor, setBgColor] = useState();
+	const [color, setColor] = useState();
+
 	useEffect(() => {
 		const help = `
 👉 HOW TO USE THE GENERATOR
@@ -31,10 +34,12 @@ You can customize lettering and flowfield from URL query parameters.
 - zOffsetChange (default 0)
 - individualZOffset (default 0.001)
 - lineSpeed (0.25)
+- bgColor (ffe9e2 don't put #, put %23)
+- color (ff4d4d don't put #, put %23)
 
 🌸 Use the device toolbar embedded in your browser to set the dimension of your artboard, then export it as picture.
 
-E.g., http://visap.net/2023/flow-generator?phrase=PERLIN%20NOISE&fontSize=100&dY=30&noiseZoom=0.01&noiseOctaves=2&noiseFalloff=3&zOffsetChange=0&individualZOffset=0.001&lineSpeed=0.25
+E.g., ${router.basePath}${router.pathname}?phrase=PERLIN%20NOISE&fontSize=100&dY=30&noiseZoom=0.01&noiseOctaves=2&noiseFalloff=3&zOffsetChange=0&individualZOffset=0.001&lineSpeed=0.25
 
 Bye 😶‍🌫️`;
 		console.log(help);
@@ -42,8 +47,19 @@ Bye 😶‍🌫️`;
 
 	useEffect(() => {
 		// Get the query parameter from the URL
-		const { phrase, fontSize, dY, noiseZoom, noiseOctaves, noiseFalloff, zOffsetChange, individualZOffset, lineSpeed } =
-			router.query;
+		const {
+			phrase,
+			fontSize,
+			dY,
+			noiseZoom,
+			noiseOctaves,
+			noiseFalloff,
+			zOffsetChange,
+			individualZOffset,
+			lineSpeed,
+			bgColor,
+			color,
+		} = router.query;
 
 		if (phrase) {
 			setPhrase(phrase);
@@ -72,6 +88,12 @@ Bye 😶‍🌫️`;
 		if (lineSpeed) {
 			setLineSpeed(Number(lineSpeed));
 		}
+		if (bgColor) {
+			setBgColor(bgColor);
+		}
+		if (color) {
+			setColor(color);
+		}
 	}, [router.query]);
 	return (
 		<>
@@ -85,6 +107,8 @@ Bye 😶‍🌫️`;
 				zOffsetChangeProp={zOffsetChange}
 				individualZOffsetProp={individualZOffset}
 				lineSpeedProp={lineSpeed}
+				bgColorProp={bgColor}
+				strokeColorProp={color}
 				widthProp={100}
 				heightProp={100}
 			/>

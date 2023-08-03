@@ -5,14 +5,14 @@
 	--navbar-height: 60px;
 	--red: #ff4d4d;
 	--orange: #ffb600;
-	--green: #00FF9D;
-	--yellow: #FFE700;
-	--pink: #FFE9E2;
+	--green: #00ff9d;
+	--yellow: #ffe700;
+	--pink: #ffe9e2;
 	--light-pink: #fff5f0;
-	--dark-pink: #DABAB2;
-	--darker-pink: #CA9488;
+	--dark-pink: #dabab2;
+	--darker-pink: #ca9488;
 	--dark-green: #757761;
-	--lapis-lazuli: #3C6997;
+	--lapis-lazuli: #3c6997;
 	--bg: var(--pink);
 	--accent: var(--red);
 	--accent2: var(--lapis-lazuli);
@@ -26,6 +26,9 @@ body {
 	font-family: "Sora", sans-serif;
 	font-size: 16px;
 	background-color: var(--bg);
+	&.transparent-bg {
+		background-color: transparent;
+	}
 }
 
 h1,

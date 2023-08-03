@@ -17,13 +17,14 @@ const showText = true; //whether or not to have an overlay of the original text 
 let bgColor;
 let fillColor; //kinda self-explanatory
 let strokeColor; //'#00ff55'; //the line color
-if (typeof window === "undefined") {
-	bgColor = fillColor = "#000";
-	strokeColor = "#fff";
-} else {
-	bgColor = fillColor = getComputedStyle(document.documentElement).getPropertyValue("--bg");
-	strokeColor = getComputedStyle(document.documentElement).getPropertyValue("--accent");
-}
+// can delete after
+// if (typeof window === "undefined") {
+// 	bgColor = fillColor = "#000";
+// 	strokeColor = "#fff";
+// } else {
+// 	bgColor = fillColor = getComputedStyle(document.documentElement).getPropertyValue("--bg");
+// 	strokeColor = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+// }
 
 const fillAlpha = 255;
 
@@ -54,9 +55,17 @@ export default function FlowingLogo({
 	zOffsetChangeProp,
 	individualZOffsetProp,
 	lineSpeedProp,
+	bgColorProp,
+	strokeColorProp,
 	widthProp,
 	heightProp,
 }) {
+	useEffect(() => {
+		bgColor = fillColor = getComputedStyle(document.documentElement).getPropertyValue("--bg");
+		strokeColor = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+		document.body.classList.add("transparent-bg");
+		return () => document.body.classList.remove("transparent-bg");
+	}, []);
 	let string = "VISAP2023"; //words to be displayed
 	if (phrase) {
 		string = phrase;
@@ -85,6 +94,15 @@ export default function FlowingLogo({
 	if (lineSpeedProp) {
 		lineSpeed = Number(lineSpeedProp);
 	}
+	if (bgColorProp) {
+		bgColor = fillColor = bgColorProp;
+	}
+	if (strokeColorProp) {
+		strokeColor = strokeColorProp;
+	}
+
+	console.log(bgColor, fillColor, strokeColor);
+
 	let dY = 0;
 	if (dYProp) {
 		dY = Number(dYProp);
@@ -115,9 +133,7 @@ export default function FlowingLogo({
 		p5StrokeColor = p5.color(strokeColor);
 		p5StrokeColor.setAlpha(strokeAlpha);
 		p5.background(bgColor);
-
 		p5.noiseDetail(noiseOctaves, noiseFalloff);
-
 		p5.textSize(size);
 		p5.textAlign(p5.CENTER);
 		p5.textFont(font);
