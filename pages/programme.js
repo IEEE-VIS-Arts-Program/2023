@@ -15,8 +15,8 @@ export default function Programme() {
 	const [programme, setProgramme] = useState([]);
 	useEffect(() => {
 		const dataWithSlug = programmeData.map((d) => {
-			const contribution = contributionsData.find((c) => c["Contribution ID"].toString() === d.pc_id.toString());
-			d.contribution_slug = convertToSlug(contribution["Title"]);
+			const contribution = contributionsData.find((c) => c["Contribution ID"].toString() === d.pc_id?.toString());
+			if (contribution) d.contribution_slug = convertToSlug(contribution["Title"]);
 			return d;
 		});
 		const temp = d3Groups(dataWithSlug, (d) => d.session_name);
@@ -44,13 +44,20 @@ export default function Programme() {
 					</p>
 					{session[1].map((presentation, i) => (
 						<div key={i} className={classNames("my-3")}>
-							<h6 className={classNames(styles.presentationTitle)}>
-								{presentation.title}{" "}
-								<Link href={"contributions/" + presentation.contribution_slug}>
-									<RightIcon className="react-icons" />
-								</Link>
-							</h6>
-							<p>{presentation.authors}</p>
+							{presentation.title && (
+								<h6 className={classNames(styles.presentationTitle)}>
+									{presentation.title}
+									{presentation.contribution_slug && (
+										<>
+											{" "}
+											<Link href={"contributions/" + presentation.contribution_slug}>
+												<RightIcon className="react-icons" />
+											</Link>
+										</>
+									)}
+								</h6>
+							)}
+							{presentation.authors && <p>{presentation.authors}</p>}
 						</div>
 					))}
 				</div>
