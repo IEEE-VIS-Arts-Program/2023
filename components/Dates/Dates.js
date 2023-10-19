@@ -63,9 +63,7 @@ export default function Dates() {
 				<p className={classNames("mt-2", "mb-3")}>
 					All submissions are due by June 2, 2023; 11:59pm (23:59){" "}
 					<a href="https://time.is/Anywhere_on_Earth">Anywhere On Earth (AOE)</a>, using the{" "}
-					<a href="https://new.precisionconference.com/submissions">Precision Conference System (PCS)</a>. Please see
-					the <Link href="/call-for-entries">Call for Entries</Link> for more details on how to submit a paper,
-					pictorial or artwork.
+					<a href="https://new.precisionconference.com/submissions">Precision Conference System (PCS)</a>.
 				</p>
 			</Row>
 		</>

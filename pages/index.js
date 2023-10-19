@@ -11,6 +11,7 @@ import Dates from "../components/Dates";
 import ExportedImage from "next-image-export-optimizer";
 import logoMonashUni from "../public/images/logo-monash-university.png";
 import logoSMU from "../public/images/logo-smu.png";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -45,6 +46,7 @@ export default function Home() {
 								<br />
 								Melbourne (VIC), Australia
 							</h6>
+
 							<p>
 								The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 								<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
@@ -70,20 +72,23 @@ export default function Home() {
 								respond to the theme of perpetual presence.
 							</p>
 							<p>
-								VISAP will be an in-person only event in 2023, in line with the broader IEEE VIS Conference. There will
-								be an opportunity to connect with the VISAP and local artistic community via talks and/or workshops. As
-								such, presenting artists are expected to attend in person and actively contribute to discussions. We
+								VISAP is an in-person only event in 2023, in line with the broader IEEE VIS Conference. There will be an
+								opportunity to connect with the VISAP and local artistic community via talks and/or workshops. As such,
+								presenting artists are expected to attend in person and actively contribute to discussions. We
 								understand this arrangement may not be suitable for some, and will review alternative arrangements.
 							</p>
 							<p>
-								Accepted works will be published on the official VISAP website and in a dedicated exhibition catalogue.
-								Papers and pictorials will be indexed in the IEEE Xplore digital library.
+								Accepted works are published on the official VISAP website and in a dedicated exhibition catalogue.
+								Papers and pictorials are indexed in the IEEE Xplore digital library.
 							</p>
 							<h3>Important Dates</h3>
 							<Dates />
-							<h5 className={classNames("mt-4")}>Some works from VISAP 2022</h5>
-							<GalleryHome className={classNames("mt-2", "mb-4")} />
-							<h3>Supporters</h3>
+							<p>
+								Read the <Link href="/call-for-entries">Call for Entries</Link> and the{" "}
+								<Link href="submission">Submission process</Link> for more details about the submission of a paper,
+								pictorial or artwork.
+							</p>
+							<h3 id="supporters">Supporters</h3>
 							<p>VISAP 2023 is possible thanks to the support of:</p>
 							<Container className="mb-3">
 								<Row>

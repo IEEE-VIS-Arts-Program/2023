@@ -30,59 +30,15 @@ export default function Header() {
 							<Link href="/contributions" className={classNames("nav-link", "reset-link")}>
 								Contributions
 							</Link>
-							<Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
-								Call for Entries
+							<Link href="/programme" className={classNames("nav-link", "reset-link")}>
+								Programme
 							</Link>
-							<NavDropdown title="Submission" id="collasible-nav-dropdown">
-								<NavDropdown.Item href="/submission#important-dates" as={DropdownItemLink} className="dropdown-item">
-									Important Dates
-								</NavDropdown.Item>
-								<NavDropdown.Item href="/submission#paper-submission" as={DropdownItemLink} className="dropdown-item">
-									Paper Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#pictorial-submission"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
-									Pictorial Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item href="/submission#artwork-submission" as={DropdownItemLink} className="dropdown-item">
-									Artwork Submission
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="/submission#submission-procedure"
-									as={DropdownItemLink}
-									className="dropdown-item"
-								>
-									Submission Procedure
-								</NavDropdown.Item>
-							</NavDropdown>
+							<Link href="/#supporters" className={classNames("nav-link", "reset-link")}>
+								Supporters
+							</Link>
 							<Link href="/organizers" className={classNames("nav-link", "reset-link")}>
 								Organizers
 							</Link>
-
-							{/* <Link href="/contributions">
-								<a className={classNames("nav-link", "reset-link")}>
-									Contributions
-								</a>
-							</Link>
-							<Link href="/#supporters">
-								<a className={classNames("nav-link", "reset-link")}>
-									Supporters
-								</a>
-							</Link>
-							<Link href="/programme">
-								<a className={classNames("nav-link", "reset-link")}>
-									Programme
-								</a>
-							</Link>			
-							<Link href="/organizers">
-								<a className={classNames("nav-link", "reset-link")}>
-									Organizers
-								</a>
-							</Link>
-							 */}
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
