@@ -21,7 +21,7 @@ export default function Contributions({ allContributionsData, metaContent }) {
 		<PageTemplate metaTitle="Contributions">
 			<h1 className={classNames("page-title")}>Contributions</h1>
 			<h6>Artworks, Pictorials, and Papers</h6>
-			<p>Browse the online exhibit or download the Visap'23 Catalogue.</p>
+			<p>Browse the online exhibit or download the <a href={basePath + "/visap-catalogue-2023-web.pdf"} download={"visap-2023-catalogue.pdf"}>Visap'23 Catalogue</a>.</p>
 			<ResponsiveMasonry columnsCountBreakPoints={masonryBreakpoints}>
 				<Masonry gutter={"1.5rem"}>
 					{allContributionsData.map((d, i) => (
@@ -37,10 +37,10 @@ export default function Contributions({ allContributionsData, metaContent }) {
 										placeholder="blur"
 									/>
 								</div>
-								<div className="px-3 pb-3">
-									<p className={classNames(styles.category, "mt-2", "mb-1")}>{d["Contribution Type"]}</p>
-									<h5 className={classNames(styles.title, "mb-2")}>{d["Title"]}</h5>
-									<p className={classNames(styles.authors, "mb-1")}>
+								<div className="p-2">
+									<p className={classNames(styles.category, "m-0")}>{d["Contribution Type"]}</p>
+									<h6 className={classNames(styles.title, "m-0", "mb-1")}>{d["Title"]}</h6>
+									<p className={classNames(styles.authors, "m-0")}>
 										{d.authors.map((d) => `${d.nameSurname}`).join(", ")}
 									</p>
 								</div>

@@ -8,6 +8,7 @@ import ExportedImage from "next-image-export-optimizer";
 import Zoom from "react-medium-image-zoom";
 import { Row, Col } from "react-bootstrap";
 import Link from "next/link";
+import BlurredSeparator from "../../components/BlurredSeparator/BlurredSeparator";
 import { BsArrowLeftCircle as LeftIcon, BsArrowRightCircle as RightIcon } from "react-icons/bs";
 
 export default function Contribution({ data }) {
@@ -18,28 +19,48 @@ export default function Contribution({ data }) {
 		1200: 3,
 		992: 2,
 		768: 2,
-		576: 1,
+		576: 2,
 	};
 
 	return (
 		<ContributionPageTemplate metaTitle={data["Title"]}>
-			<Row>
+			<Row className={classNames("my-3", "my-md-4")}>
 				<Col
 					sm={{ span: 12, offset: 0 }}
 					md={{ span: 1, offset: 0 }}
 					lg={{ span: 2, offset: 0 }}
 					xl={{ span: 2, offset: 0 }}
-					className={classNames(styles.pageTitle, "my-0", "d-flex", "align-items-center", "justify-content-start")}
+					className={classNames(
+						styles.prevNext,
+						"my-0",
+						"d-flex",
+						"align-items-center",
+						"justify-content-end",
+						"justify-content-md-start"
+					)}
 				>
-					<p>
+					<p className={classNames("m-0")}>
 						<Link href={"/contributions/" + data.prev}>
-							<LeftIcon />{" "}
-							Prev
+							<LeftIcon
+								style={{
+									position: "relative",
+									top: -6,
+									verticalAlign: "bottom",
+								}}
+							/>
+							&nbsp;Prev
 						</Link>
-						<span className="d-block d-md-none">
-							{" / "}
+						<span className="d-inline-block d-md-none">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<Link href={"/contributions/" + data.next}>
-								Next <RightIcon />
+								Next{" "}
+								<RightIcon
+									style={{
+										position: "relative",
+										top: -6,
+										verticalAlign: "bottom",
+									}}
+								/>
 							</Link>
 						</span>
 					</p>
@@ -49,11 +70,11 @@ export default function Contribution({ data }) {
 					md={{ span: 10, offset: 1 }}
 					lg={{ span: 8, offset: 0 }}
 					xl={{ span: 8, offset: 0 }}
-					className={classNames(styles.pageTitle, "my-5")}
+					className={classNames(styles.pageTitle)}
 				>
-					<p className={classNames(styles.pageTitle, "mb-0")}>{data["Contribution Type"]}</p>
+					<p className={classNames(styles.pageTitle, "m-0")}>{data["Contribution Type"]}</p>
 					<h1 className={classNames(styles.pageTitle, "my-0", "mb-1")}>{data["Title"]}</h1>
-					<p className={classNames(styles.pageTitle, "mt-0")}>
+					<p className={classNames(styles.pageTitle, "m-0")}>
 						{data.authors.map((author) => author.nameSurname).join(", ")}
 					</p>
 				</Col>
@@ -62,14 +83,29 @@ export default function Contribution({ data }) {
 					md={{ span: 1, offset: 0 }}
 					lg={{ span: 2, offset: 0 }}
 					xl={{ span: 2, offset: 0 }}
-					className={classNames(styles.pageTitle, "my-0", "d-flex", "align-items-center", "justify-content-end")}
+					className={classNames(
+						styles.prevNext,
+						"my-0",
+						"align-items-center",
+						"justify-content-end",
+						"d-none d-md-flex"
+					)}
 				>
 					<p>
 						<Link href={"/contributions/" + data.next}>
-							Next <RightIcon />
+							Next{" "}
+							<RightIcon
+								style={{
+									position: "relative",
+									top: -6,
+									verticalAlign: "bottom",
+								}}
+							/>
 						</Link>
 					</p>
 				</Col>
+			</Row>
+			<Row>
 				<Col sm={{ span: 12, offset: 0 }} md={{ span: 10, offset: 1 }} className={classNames(styles.pageTitle, "mb-5")}>
 					<ResponsiveMasonry
 						columnsCountBreakPoints={masonryBreakpoints}
@@ -109,12 +145,13 @@ export default function Contribution({ data }) {
 							</a>
 						</p>
 					)}
+					<BlurredSeparator />
 					<h5 className={classNames("mt-5 mb-3")}>Artist{data.authors.length > 1 ? "s" : ""} bio</h5>
 				</Col>
-				<Row>
+				<Row className={classNames("mb-4")}>
 					{data.authors.map((author, i) => (
 						<Col key={"auth" + i} sm={{ span: 12, offset: 0 }} md={{ span: 10, offset: (i % 3) + 1 }}>
-							<Row className={classNames("d-flex", "align-items-center", "mb-5")}>
+							<Row className={classNames("d-flex", "align-items-center", "mb-3")}>
 								<Col sm={2}>
 									{author.image && (
 										<div
@@ -135,7 +172,7 @@ export default function Contribution({ data }) {
 									)}
 								</Col>
 								<Col sm={7}>
-									<p className={classNames("mt-0", "mb-0", "fw-semibold", styles.bio)}>
+									<p className={classNames("mt-3", "mt-md-0", "mb-0", "fw-semibold", styles.bio)}>
 										{!author.website && <>{author.nameSurname}</>}
 										{author.website && <a href={author.website}>{author.nameSurname}</a>}
 									</p>
@@ -145,6 +182,30 @@ export default function Contribution({ data }) {
 							</Row>
 						</Col>
 					))}
+					{/* <BlurredSeparator /> */}
+					<p className={classNames("my-5", "text-center")}>
+						<Link href={"/contributions/" + data.prev}>
+							<LeftIcon
+								style={{
+									position: "relative",
+									top: -5,
+									verticalAlign: "bottom",
+								}}
+							/>{" "}
+							Previous work
+						</Link>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<Link href={"/contributions/" + data.next}>
+							Next work{" "}
+							<RightIcon
+								style={{
+									position: "relative",
+									top: -5,
+									verticalAlign: "bottom",
+								}}
+							/>
+						</Link>
+					</p>
 				</Row>
 			</Row>
 		</ContributionPageTemplate>

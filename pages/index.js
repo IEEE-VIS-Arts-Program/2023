@@ -89,14 +89,26 @@ export default function Home() {
 								<Row>
 									<Col xs={10} md={6} className={classNames(styles.logo, "mb-4 py-2 pt-3 rounded")}>
 										<a className="logo" href="https://www.monash.edu/" target="_blank" rel="noreferrer">
-											<ExportedImage src={logoMonashUni} alt="Logo of Monash University" layout="responsive" />
+											<ExportedImage
+												src={logoMonashUni.src}
+												width={logoMonashUni.width}
+												height={logoMonashUni.height}
+												alt="Logo of Monash University"
+												layout="responsive"
+											/>
 										</a>
 									</Col>
 								</Row>
 								<Row>
 									<Col xs={10} md={6} className={classNames(styles.logo, "mb-4 p-4 rounded")}>
 										<a className="logo" href="https://smallmultiples.com.au/" target="_blank" rel="noreferrer">
-											<ExportedImage src={logoSMU} alt="Logo of Small Multiple Studio" layout="responsive" />
+											<ExportedImage
+												src={logoSMU.src}
+												width={logoSMU.width}
+												height={logoSMU.height}
+												alt="Logo of Small Multiple Studio"
+												style={{objectFit: "contain"}}
+											/>
 										</a>
 									</Col>
 								</Row>
