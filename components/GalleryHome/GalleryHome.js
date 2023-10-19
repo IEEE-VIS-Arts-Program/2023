@@ -1,58 +1,14 @@
 import CarouselComp from "../CarouselComp";
 export default function GalleryHome({ className }) {
 	const images = [
-		{
-			src: encodeURI("images/home-gallery/001_still_videoinstallation.jpg"),
-			caption: <>Beyond Human Perception</>,
-		},
-		{
-			src: "images/home-gallery/01.png",
-			caption: <>Quaran.tiles</>,
-		},
-		{
-			src: encodeURI("images/home-gallery/ColorCompare (1).png"),
-			caption: <>Affective, Hand-Sculpted Glyph Forms for Engaging and Expressive Scientific Visualization</>,
-		},
-		{
-			src: encodeURI("images/home-gallery/FRANCIS GALTON (Widest and Tallest) 8.jpg"),
-			caption: <>Shifting winds: Gendered structures of academic mentorship</>,
-		},
-		{
-			src: "images/home-gallery/image002.jpg",
-			caption: <>RAY</>,
-		},
-		{
-			src: "images/home-gallery/metoo-reports-lg.png",
-			caption: <>#MeToo Anti-Network</>,
-		},
-		{
-			src: "images/home-gallery/Mingling.png",
-			caption: <>Under the Green: Visual data storytelling the process of urban CO2 neutralization by forests</>,
-		},
-		{
-			src: "images/home-gallery/molecular-planets4.png",
-			caption: <>Molecular Planets</>,
-		},
-		{
-			src: "images/home-gallery/OctoAnemone-1.png",
-			caption: <>OctoAnemone</>,
-		},
-		{
-			src: "images/home-gallery/proj_robotdance-01.jpg",
-			caption: <>Presentation of Self in Machine Life</>,
-		},
-		{
-			src: "images/home-gallery/SiftingStrands-0.png",
-			caption: <>Sifting Strands</>,
-		},
-		{
-			src: "images/home-gallery/skyglyphs_visap_2022-rep-images-04.png",
-			caption: <>Skyglyphs</>,
-		},
-		{
-			src: "images/home-gallery/SoftVoss-1.png",
-			caption: <>SoftVoss</>,
-		},
+		{ src: "images/home-gallery/IMG_20231003_175952.jpg", caption: <>Exhibition of Visap 2023</> },
+		{ src: "images/home-gallery/IMG_20231003_175958.jpg", caption: <>Catalogues in the exhibition space</> },
+		// { src: "images/home-gallery/IMG_20231003_180005.jpg", caption: <>Beyond Human Perception</> },
+		// { src: "images/home-gallery/IMG_20231003_180008.jpg", caption: <>Beyond Human Perception</> },
+		{ src: "images/home-gallery/IMG_20231005_131530.jpg", caption: <>Visiting the 2023 exhibition</> },
+		{ src: "images/home-gallery/IMG_20231005_131538.jpg", caption: <>Colophon of the exhibition</> },
+		{ src: "images/home-gallery/IMG_20231005_131555.jpg", caption: <>Visiting the 2023 exhibition</> },
+		{ src: "images/home-gallery/IMG_20231003_175943.jpg", caption: <>The artwork "Infinite Colours"</> },
 	];
 
 	return <CarouselComp className={className} images={images} height="56.03%" />;

@@ -46,7 +46,7 @@ export default function Home() {
 								<br />
 								Melbourne (VIC), Australia
 							</h6>
-
+							<GalleryHome className={classNames("mt-2", "mb-5")} />
 							<p>
 								The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 								<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
