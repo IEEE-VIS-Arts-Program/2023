@@ -35,7 +35,8 @@ export default function Contributions({ allContributionsData, metaContent }) {
 							<div key={d.id} dataname={d.id}>
 								<div className={classNames(styles.thumbnail)}>
 									<ExportedImage
-										src={basePath + "/" + encodeURIComponent(d.image.src)}
+										// src={basePath + "/" + d.image.src}
+										src = {basePath + "/" + encodeURI(d.image.src)}
 										alt={"Preview image of " + d.title}
 										sizes="(max-width: 576px) 50vw, (max-width: 768px) 33vw, 25vw"
 										style={{

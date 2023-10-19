@@ -117,7 +117,8 @@ export default function Contribution({ data }) {
 								<div key={"img-" + i} className={classNames(styles.thumbnail)}>
 									<ExportedImage
 										key={"img-" + i}
-										src={basePath + "/" + encodeURIComponent(d.src)}
+										src={basePath + "/" + encodeURI(d.src)}
+										// src={basePath + "/" + d.src}
 										alt={"Image of " + data.title}
 										sizes="20vw"
 										style={{
@@ -164,7 +165,8 @@ export default function Contribution({ data }) {
 											style={{ maxWidth: "30vw" }}
 										>
 											<ExportedImage
-												src={basePath + "/" + encodeURIComponent(author.image.src)}
+												// src={basePath + "/" + author.image.src}
+												src={basePath + "/" + encodeURI(author.image.src)}
 												alt={"Image of " + data.nameSurname}
 												sizes="20vw"
 												style={{

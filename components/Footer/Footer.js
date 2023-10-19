@@ -1,5 +1,6 @@
 import styles from "./Footer.module.scss";
 import { Container, Col, Row } from "react-bootstrap";
+import { useRouter } from "next/router";
 import previousEditions from "./previous-editions.json";
 import logoVis from "../../public/images/logo-vis.svg";
 import logoMastodon from "../../public/images/logo-mastodon.svg";
@@ -11,6 +12,7 @@ import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 
 export default function Footer() {
+	const { basePath } = useRouter();
 	const hostName = "https://visap.net";
 	previousEditions.map((d) => {
 		d.fullUrl = d.url.includes("https://") ? d.url : hostName + d.url;
