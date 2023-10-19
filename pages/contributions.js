@@ -31,7 +31,11 @@ export default function Contributions({ allContributionsData, metaContent }) {
 									<ExportedImage
 										src={basePath + "/" + d.image.src}
 										alt={"Preview image of " + d.title}
-										layout="responsive"
+										sizes="(max-width: 576px) 50vw, (max-width: 768px) 33vw, 25vw"
+										style={{
+											width: "100%",
+											height: "auto",
+										}}
 										width={d.image.width}
 										height={d.image.height}
 										placeholder="blur"

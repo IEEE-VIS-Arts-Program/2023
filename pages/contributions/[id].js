@@ -119,7 +119,11 @@ export default function Contribution({ data }) {
 										key={"img-" + i}
 										src={basePath + "/" + d.src}
 										alt={"Image of " + data.title}
-										layout="responsive"
+										sizes="20vw"
+										style={{
+											width: "100%",
+											height: "auto",
+										}}
 										width={d.width}
 										height={d.height}
 										placeholder="blur"
@@ -162,7 +166,11 @@ export default function Contribution({ data }) {
 											<ExportedImage
 												src={basePath + "/" + author.image.src}
 												alt={"Image of " + data.nameSurname}
-												layout="responsive"
+												sizes="20vw"
+												style={{
+													width: "100%",
+													height: "auto",
+												}}
 												width={author.image.width}
 												height={author.image.height}
 												placeholder="blur"

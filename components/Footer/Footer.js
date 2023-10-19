@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import previousEditions from "./previous-editions.json";
 import logoVis from "../../public/images/logo-vis.svg";
 import logoMastodon from "../../public/images/logo-mastodon.svg";
-import logoTwitter from "../../public/images/logo-twitter dark.png";
+import logoTwitter from "../../public/images/logo-twitter-dark.png";
 
 import classNames from "classnames";
 import Link from "next/link";
@@ -50,7 +50,7 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoVis.src} fill={true} style={{ objectFit: "contain" }} alt="IEEE VIS logo" />
+								<ExportedImage src={logoVis.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="IEEE VIS logo" />
 							</a>
 							<a
 								href="https://twitter.com/visapnet"
@@ -59,7 +59,7 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoTwitter.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage src={logoTwitter.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="Twitter logo" />
 							</a>
 							<a
 								href="https://vis.social/@visap"
@@ -68,54 +68,9 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoMastodon.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage src={logoMastodon.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="Twitter logo" />
 							</a>
 						</div>
-						{/* <h6 className={classNames("mb-3")}>Supporters</h6>
-						<p>TBA</p>
-						<div className="logos mb-3">
-							<a className="logo" href="https://www.autodesk.com/" target="_blank" rel="noreferrer">
-								<ExportedImage src={logoAutodesk} alt="Autodesk Logo" layout="fill" objectFit="contain" objectPosition="left center" />
-							</a>
-						</div>
-						<div className="logos mb-3">
-							<a className="logo" href="https://www.uvic.ca/ecs/computerscience" target="_blank" rel="noreferrer">
-								<ExportedImage
-									src={logoUniVictoria}
-									alt="Logo of Department of computer science, University of Victoria"
-									layout="fill"
-									objectFit="contain"
-									objectPosition="left center"
-								/>
-							</a>
-						</div>
-						<div className="logos mb-3">
-							<a className="logo" href="https://www.ou.edu/finearts/visual-arts" target="_blank" rel="noreferrer">
-								<ExportedImage
-									src={logoSchoolVisualArts}
-									alt="Logo of School of Visual Arts, University of Oklahoma"
-									layout="fill"
-									objectFit="contain"
-									objectPosition="left center"
-								/>
-							</a>
-						</div>
-						<div className="logos mb-3">
-							<a className="logo" href="http://ieeevis.org/year/2022/welcome" target="_blank" rel="noreferrer">
-								<ExportedImage src={logoIEEE} alt="Logo of IEEE" layout="fill" objectFit="contain" objectPosition="left center" />
-							</a>
-						</div>
-						<div className="logos mb-3">
-							<a className="logo" href="https://creativeinformatics.org/" target="_blank" rel="noreferrer">
-								<ExportedImage
-									src={logoCreativeInformatics}
-									alt="Logo of Creative Informatics"
-									layout="fill"
-									objectFit="contain"
-									objectPosition="left center"
-								/>
-							</a>
-						</div> */}
 					</Col>
 
 					<Col xs={12} md={4} lg={4} xl={4} className={classNames("mb-5")}>
