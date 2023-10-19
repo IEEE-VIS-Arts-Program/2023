@@ -1,8 +1,8 @@
 [
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
@@ -12,8 +12,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
@@ -23,8 +23,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
@@ -34,8 +34,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -45,8 +45,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -56,8 +56,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -67,8 +67,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -78,8 +78,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -89,8 +89,8 @@
   },
   {
     "session_name": "Human Presence",
-    "session_date": "Wednesday, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Wed, October 25, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
@@ -100,8 +100,8 @@
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
@@ -111,19 +111,19 @@
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
     "title": "The Island of Loneliness",
     "authors": "Junxiu Tang, Rui Sheng, Yifang Wang, Xinhuan Shu, Xiaojiao Chen, Tan Tang, Yingcai Wu",
-    "pc_id": "1032"
+    "pc_id": "1074"
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
@@ -133,8 +133,19 @@
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
+    "session_location": "Room 103",
+    "session_hosts": "Francesca Morini, Jonathan Duckworth ",
+    "time": "4",
+    "title": "Monster in a Snow Globe. Biographies as Data Physicalizations",
+    "authors": "Florian Windhager, Viola Rühse, Michael Smuc",
+    "pc_id": "1060"
+  },
+  {
+    "session_name": "Invisible Presence",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
@@ -144,8 +155,8 @@
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
@@ -155,24 +166,13 @@
   },
   {
     "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
     "title": "The Vast Territory",
     "authors": "Ignacio Pérez-Messina, Simón López Trujillo",
     "pc_id": "1040"
-  },
-  {
-    "session_name": "Invisible Presence",
-    "session_date": "Thursday, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM AEDT (UTC+11)",
-    "session_location": "Room 103",
-    "session_hosts": "Francesca Morini, Jonathan Duckworth ",
-    "time": "4",
-    "title": "Monster in a Snow Globe. Biographies as Data Physicalizations",
-    "authors": "Florian Windhager, Viola Rühse, Michael Smuc",
-    "pc_id": "1060"
   }
 ]
