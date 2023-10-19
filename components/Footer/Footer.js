@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import previousEditions from "./previous-editions.json";
 import logoVis from "../../public/images/logo-vis.svg";
 import logoMastodon from "../../public/images/logo-mastodon.svg";
-import logoTwitter from "../../public/images/logo-twitter dark.png";
+import logoTwitter from "../../public/images/logo-twitter-dark.png";
 
 import classNames from "classnames";
 import Link from "next/link";
@@ -50,7 +50,15 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoVis.src} fill={true} style={{ objectFit: "contain" }} alt="IEEE VIS logo" />
+								<ExportedImage
+									src={logoVis.src}
+									fill={true}
+									sizes="128px"
+									style={{
+										objectFit: "contain",
+									}}
+									alt="IEEE VIS logo"
+								/>
 							</a>
 							<a
 								href="https://twitter.com/visapnet"
@@ -59,7 +67,15 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoTwitter.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage
+									src={logoTwitter.src}
+									fill={true}
+									sizes="128px"
+									style={{
+										objectFit: "contain",
+									}}
+									alt="Twitter logo"
+								/>
 							</a>
 							<a
 								href="https://vis.social/@visap"
@@ -68,7 +84,15 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoMastodon.src} fill={true} style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage
+									src={logoMastodon.src}
+									fill={true}
+									sizes="128px"
+									style={{
+										objectFit: "contain",
+									}}
+									alt="Twitter logo"
+								/>
 							</a>
 						</div>
 						{/* <h6 className={classNames("mb-3")}>Supporters</h6>

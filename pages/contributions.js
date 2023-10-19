@@ -21,7 +21,13 @@ export default function Contributions({ allContributionsData, metaContent }) {
 		<PageTemplate metaTitle="Contributions">
 			<h1 className={classNames("page-title")}>Contributions</h1>
 			<h6>Artworks, Pictorials, and Papers</h6>
-			<p>Browse the online exhibit or download the <a href={basePath + "/visap-catalogue-2023-web.pdf"} download={"visap-2023-catalogue.pdf"}>Visap'23 Catalogue</a>.</p>
+			<p>
+				Browse the online exhibit or download the{" "}
+				<a href={basePath + "/visap-catalogue-2023-web.pdf"} download={"visap-2023-catalogue.pdf"}>
+					Visap'23 Catalogue
+				</a>
+				.
+			</p>
 			<ResponsiveMasonry columnsCountBreakPoints={masonryBreakpoints}>
 				<Masonry gutter={"1.5rem"}>
 					{allContributionsData.map((d, i) => (
@@ -29,9 +35,13 @@ export default function Contributions({ allContributionsData, metaContent }) {
 							<div key={d.id} dataname={d.id}>
 								<div className={classNames(styles.thumbnail)}>
 									<ExportedImage
-										src={basePath + "/" + d.image.src}
+										src={basePath + "/" + encodeURIComponent(d.image.src)}
 										alt={"Preview image of " + d.title}
-										layout="responsive"
+										sizes="(max-width: 576px) 50vw, (max-width: 768px) 33vw, 25vw"
+										style={{
+											width: "100%",
+											height: "auto",
+										}}
 										width={d.image.width}
 										height={d.image.height}
 										placeholder="blur"

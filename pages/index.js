@@ -91,10 +91,14 @@ export default function Home() {
 										<a className="logo" href="https://www.monash.edu/" target="_blank" rel="noreferrer">
 											<ExportedImage
 												src={logoMonashUni.src}
+												alt="Logo of Monash University"
+												sizes="100vw"
+												style={{
+													width: "100%",
+													height: "auto",
+												}}
 												width={logoMonashUni.width}
 												height={logoMonashUni.height}
-												alt="Logo of Monash University"
-												layout="responsive"
 											/>
 										</a>
 									</Col>
@@ -104,10 +108,14 @@ export default function Home() {
 										<a className="logo" href="https://smallmultiples.com.au/" target="_blank" rel="noreferrer">
 											<ExportedImage
 												src={logoSMU.src}
+												alt="Logo of Small Multiple Studio"
+												sizes="100vw"
+												style={{
+													width: "100%",
+													height: "auto",
+												}}
 												width={logoSMU.width}
 												height={logoSMU.height}
-												alt="Logo of Small Multiple Studio"
-												style={{objectFit: "contain"}}
 											/>
 										</a>
 									</Col>

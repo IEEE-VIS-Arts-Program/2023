@@ -2,7 +2,7 @@ import CarouselComp from "../CarouselComp";
 export default function GalleryHome({ className }) {
 	const images = [
 		{
-			src: "images/home-gallery/001_still_videoinstallation.jpg",
+			src: encodeURIComponent("images/home-gallery/001_still_videoinstallation.jpg"),
 			caption: <>Beyond Human Perception</>,
 		},
 		{
@@ -10,11 +10,11 @@ export default function GalleryHome({ className }) {
 			caption: <>Quaran.tiles</>,
 		},
 		{
-			src: "images/home-gallery/ColorCompare (1).png",
+			src: encodeURIComponent("images/home-gallery/ColorCompare (1).png"),
 			caption: <>Affective, Hand-Sculpted Glyph Forms for Engaging and Expressive Scientific Visualization</>,
 		},
 		{
-			src: "images/home-gallery/FRANCIS GALTON (Widest and Tallest) 8.jpg",
+			src: encodeURIComponent("images/home-gallery/FRANCIS GALTON (Widest and Tallest) 8.jpg"),
 			caption: <>Shifting winds: Gendered structures of academic mentorship</>,
 		},
 		{

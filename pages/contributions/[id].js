@@ -117,9 +117,13 @@ export default function Contribution({ data }) {
 								<div key={"img-" + i} className={classNames(styles.thumbnail)}>
 									<ExportedImage
 										key={"img-" + i}
-										src={basePath + "/" + d.src}
+										src={basePath + "/" + encodeURIComponent(d.src)}
 										alt={"Image of " + data.title}
-										layout="responsive"
+										sizes="20vw"
+										style={{
+											width: "100%",
+											height: "auto",
+										}}
 										width={d.width}
 										height={d.height}
 										placeholder="blur"
@@ -160,9 +164,13 @@ export default function Contribution({ data }) {
 											style={{ maxWidth: "30vw" }}
 										>
 											<ExportedImage
-												src={basePath + "/" + author.image.src}
+												src={basePath + "/" + encodeURIComponent(author.image.src)}
 												alt={"Image of " + data.nameSurname}
-												layout="responsive"
+												sizes="20vw"
+												style={{
+													width: "100%",
+													height: "auto",
+												}}
 												width={author.image.width}
 												height={author.image.height}
 												placeholder="blur"
