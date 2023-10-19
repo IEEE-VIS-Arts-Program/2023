@@ -27,6 +27,9 @@ export default function Header() {
 							<Link href="/" className={classNames("nav-link", "reset-link")}>
 								Home
 							</Link>
+							<Link href="/contributions" className={classNames("nav-link", "reset-link")}>
+								Contributions
+							</Link>
 							<Link href="/call-for-entries" className={classNames("nav-link", "reset-link")}>
 								Call for Entries
 							</Link>

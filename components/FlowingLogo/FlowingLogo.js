@@ -101,8 +101,6 @@ export default function FlowingLogo({
 		strokeColor = strokeColorProp;
 	}
 
-	console.log(bgColor, fillColor, strokeColor);
-
 	let dY = 0;
 	if (dYProp) {
 		dY = Number(dYProp);
