@@ -41,26 +41,14 @@ export default function Contribution({ data }) {
 				>
 					<p className={classNames("m-0")}>
 						<Link href={"/contributions/" + data.prev}>
-							<LeftIcon
-								style={{
-									position: "relative",
-									top: -6,
-									verticalAlign: "bottom",
-								}}
-							/>
+							<LeftIcon className={styles.arrow} />
 							&nbsp;Prev
 						</Link>
 						<span className="d-inline-block d-md-none">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<Link href={"/contributions/" + data.next}>
 								Next{" "}
-								<RightIcon
-									style={{
-										position: "relative",
-										top: -6,
-										verticalAlign: "bottom",
-									}}
-								/>
+								<RightIcon className={styles.arrow} />
 							</Link>
 						</span>
 					</p>
@@ -94,13 +82,7 @@ export default function Contribution({ data }) {
 					<p>
 						<Link href={"/contributions/" + data.next}>
 							Next{" "}
-							<RightIcon
-								style={{
-									position: "relative",
-									top: -6,
-									verticalAlign: "bottom",
-								}}
-							/>
+							<RightIcon className={styles.arrow} />
 						</Link>
 					</p>
 				</Col>
@@ -195,25 +177,13 @@ export default function Contribution({ data }) {
 					{/* <BlurredSeparator /> */}
 					<p className={classNames("my-5", "text-center")}>
 						<Link href={"/contributions/" + data.prev}>
-							<LeftIcon
-								style={{
-									position: "relative",
-									top: -5,
-									verticalAlign: "bottom",
-								}}
-							/>{" "}
+							<LeftIcon className={styles.arrow}/>{" "}
 							Previous work
 						</Link>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<Link href={"/contributions/" + data.next}>
 							Next work{" "}
-							<RightIcon
-								style={{
-									position: "relative",
-									top: -5,
-									verticalAlign: "bottom",
-								}}
-							/>
+							<RightIcon className={styles.arrow} />
 						</Link>
 					</p>
 				</Row>

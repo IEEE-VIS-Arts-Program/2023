@@ -1,5 +1,43 @@
 [
   {
+    "session_name": "VISAP Opening Reception",
+    "session_date": "Tue, October 24, 2023",
+    "session_time": "6:00 PM-7:00 PM",
+    "session_location": "Library at the Docks Gallery",
+    "session_hosts": "Xavier Ho, Jonathan Duckworth ",
+    "title": "Session I",
+    "authors": "VISAP Reception "
+  },
+  {
+    "session_name": "VISAP Opening Reception",
+    "session_date": "Tue, October 24, 2023",
+    "session_time": "6:40 PM-6:50 PM",
+    "session_location": "Multipurpose Room next to Library at the Docks",
+    "session_hosts": "Xavier Ho, Jonathan Duckworth ",
+    "time": "9",
+    "title": "Invited Artist Talk",
+    "authors": "Francesca Morini"
+  },
+  {
+    "session_name": "VISAP Opening Reception",
+    "session_date": "Tue, October 24, 2023",
+    "session_time": "6:50 PM-7:00 PM",
+    "session_location": "Multipurpose Room next to Library at the Docks",
+    "session_hosts": "Xavier Ho, Jonathan Duckworth ",
+    "time": "9",
+    "title": "Invited Artist Talk",
+    "authors": "Alison Bennett"
+  },
+  {
+    "session_name": "VISAP Opening Reception",
+    "session_date": "Tue, October 24, 2023",
+    "session_time": "7:00 PM-8:00 PM",
+    "session_location": "Library at the Docks Gallery",
+    "session_hosts": "Xavier Ho, Jonathan Duckworth ",
+    "title": "Session II",
+    "authors": "VISAP Reception "
+  },
+  {
     "session_name": "Human Presence",
     "session_date": "Wed, October 25, 2023",
     "session_time": "10:45 AM-12:00 PM",
@@ -7,7 +45,7 @@
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
     "title": "Body Cosmos: An Immersive Experience Driven by Real-Time Bio-Data",
-    "authors": "Rem RunGu Lin, Yongen Ke, Kang Zhang",
+    "authors": "Rem RunGu Lin*, Yongen Ke, Kang Zhang, Leixin Luo",
     "pc_id": "1029"
   },
   {
@@ -18,7 +56,7 @@
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
     "title": "Parasitic signals: Multimodal Sonata for Real-time Interactive Simulation of the SARS-CoV-2 Virus",
-    "authors": "Myungin Lee, Sabina Hyoju Ahn,Yoojin Oh, JoAnn Kuchera-Morin",
+    "authors": "Myungin Lee*, Sabina Hyoju Ahn,Yoojin Oh, JoAnn Kuchera-Morin",
     "pc_id": "1069"
   },
   {
@@ -29,7 +67,7 @@
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "9",
     "title": "Associative Forms for Encoding Multivariate Climate data",
-    "authors": "Francesca Samsel, Greg Abram, Catherine L. Bowma, Daniel F. Keefe",
+    "authors": "Francesca Samsel*, Greg Abram, Catherine L. Bowma, Daniel F. Keefe",
     "pc_id": "1084"
   },
   {
@@ -73,7 +111,7 @@
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
     "title": "The Heart",
-    "authors": "Robert Walton, Zaher Joukhadar",
+    "authors": "Robert Walton*, Zaher Joukhadar",
     "pc_id": "1062"
   },
   {
@@ -84,19 +122,8 @@
     "session_hosts": "Alison Bennett, Xavier Ho",
     "time": "4",
     "title": "Eco-Mending",
-    "authors": "Jane L. Adams, Racquel Fygenson",
+    "authors": "Racquel Fygenson*, Jane L. Adams",
     "pc_id": "1081"
-  },
-  {
-    "session_name": "Human Presence",
-    "session_date": "Wed, October 25, 2023",
-    "session_time": "10:45 AM-12:00 PM",
-    "session_location": "Room 103",
-    "session_hosts": "Alison Bennett, Xavier Ho",
-    "time": "4",
-    "title": "Latent Prism",
-    "authors": "Jane L. Adams",
-    "pc_id": "1083"
   },
   {
     "session_name": "Invisible Presence",
@@ -106,7 +133,7 @@
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
     "title": "Bitter Data: An Exploration into Data Edibilization of Negative Emotion Data",
-    "authors": "Yufan Li, Yue Huang, Kang Zhang, Varvara Guljajeva",
+    "authors": "Yufan Li*, Yue Huang, Kang Zhang, Varvara Guljajeva",
     "pc_id": "1066"
   },
   {
@@ -117,7 +144,7 @@
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
     "title": "The Island of Loneliness",
-    "authors": "Junxiu Tang, Rui Sheng, Yifang Wang, Xinhuan Shu, Xiaojiao Chen, Tan Tang, Yingcai Wu",
+    "authors": "Junxiu Tang*, Rui Sheng, Yifang Wang, Xinhuan Shu, Xiaojiao Chen, Tan Tang, Yingcai Wu",
     "pc_id": "1074"
   },
   {
@@ -128,7 +155,7 @@
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "9",
     "title": "Reinterpreted Spaces, an AI Printmaking Collaboration",
-    "authors": "Hannen E. Wolfe, Charlotte Rogerson, Amanda Lilleston",
+    "authors": "Hannen E. Wolfe*, Charlotte Rogerson, Amanda Lilleston",
     "pc_id": "1051"
   },
   {
@@ -138,19 +165,8 @@
     "session_location": "Room 103",
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
-    "title": "Monster in a Snow Globe. Biographies as Data Physicalizations",
-    "authors": "Florian Windhager, Viola Rühse, Michael Smuc",
-    "pc_id": "1060"
-  },
-  {
-    "session_name": "Invisible Presence",
-    "session_date": "Thu, October 26, 2023",
-    "session_time": "10:45 AM-12:00 PM",
-    "session_location": "Room 103",
-    "session_hosts": "Francesca Morini, Jonathan Duckworth ",
-    "time": "4",
     "title": "Spotlight",
-    "authors": "Kimiya Pahlevan, Charles Perin",
+    "authors": "Charles Perin*, Kimiya Pahlevan",
     "pc_id": "1026"
   },
   {
@@ -161,7 +177,7 @@
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
     "title": "Infinite Colours",
-    "authors": "Xavier Ho, Stephen James Krol",
+    "authors": "Xavier Ho*, Stephen James Krol",
     "pc_id": "1034"
   },
   {
@@ -172,7 +188,29 @@
     "session_hosts": "Francesca Morini, Jonathan Duckworth ",
     "time": "4",
     "title": "The Vast Territory",
-    "authors": "Ignacio Pérez-Messina, Simón López Trujillo",
+    "authors": "Ignacio Pérez-Messina*, Simón López Trujillo",
     "pc_id": "1040"
+  },
+  {
+    "session_name": "Invisible Presence",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
+    "session_location": "Room 103",
+    "session_hosts": "Francesca Morini, Jonathan Duckworth ",
+    "time": "4",
+    "title": "Monster in a Snow Globe. Biographies as Data Physicalizations",
+    "authors": "Florian Windhager*, Viola Rühse, Michael Smuc",
+    "pc_id": "1060"
+  },
+  {
+    "session_name": "Invisible Presence",
+    "session_date": "Thu, October 26, 2023",
+    "session_time": "10:45 AM-12:00 PM",
+    "session_location": "Room 103",
+    "session_hosts": "Francesca Morini, Jonathan Duckworth ",
+    "time": "4",
+    "title": "Latent Prism",
+    "authors": "Jane L. Adams",
+    "pc_id": "1083"
   }
 ]
