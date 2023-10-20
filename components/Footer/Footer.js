@@ -26,11 +26,12 @@ export default function Footer() {
 							<h6 className={classNames("mb-3")}>IEEE VISAP 2023</h6>
 							<div className={classNames(styles.navigation, "mb-3")}>
 								<Link href="/">Home</Link>
-								<Link href="/call-for-entries">Call for Entries</Link>
-								<Link href="/submission">Submission instructions</Link>
 								<Link href="/contributions">Contributions</Link>
-								{/* <Link href="/programme">Programme</Link> */}
+								<Link href="/programme">Programme</Link>
+								<Link href="/#supporters">Supporters</Link>
 								<Link href="/organizers">Organizers</Link>
+								<Link href="/call-for-entries">Call for Entries</Link>
+								<Link href="/submission">Submission Process</Link>
 							</div>
 						</div>
 					</Col>
@@ -52,7 +53,13 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoVis.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="IEEE VIS logo" />
+								<ExportedImage
+									src={logoVis.src}
+									fill={true}
+									sizes="128px"
+									style={{ objectFit: "contain" }}
+									alt="IEEE VIS logo"
+								/>
 							</a>
 							<a
 								href="https://twitter.com/visapnet"
@@ -61,7 +68,13 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoTwitter.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage
+									src={logoTwitter.src}
+									fill={true}
+									sizes="128px"
+									style={{ objectFit: "contain" }}
+									alt="Twitter logo"
+								/>
 							</a>
 							<a
 								href="https://vis.social/@visap"
@@ -70,7 +83,13 @@ export default function Footer() {
 								style={{ display: "inline-block", width: "2rem", height: "2rem", position: "relative" }}
 								className={classNames("me-2")}
 							>
-								<ExportedImage src={logoMastodon.src} fill={true} sizes="128px" style={{ objectFit: "contain" }} alt="Twitter logo" />
+								<ExportedImage
+									src={logoMastodon.src}
+									fill={true}
+									sizes="128px"
+									style={{ objectFit: "contain" }}
+									alt="Twitter logo"
+								/>
 							</a>
 						</div>
 					</Col>
