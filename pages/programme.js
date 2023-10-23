@@ -28,7 +28,7 @@ export default function Programme() {
 			<p>
 				VISAP 2023 takes place in Melbourne (Vic), Australia.
 				<br />
-				Presenters (TBA) are identified by an asterisk (*).
+				Presenters are identified by an asterisk (*).
 			</p>
 			{programme.map((session) => (
 				<div key={session[0]} className={classNames(styles.session, "p-3", "my-4")}>
