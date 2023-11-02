@@ -101,7 +101,7 @@ export default function Contribution({ data }) {
 										key={"img-" + i}
 										src={basePath + "/" + encodeURI(d.src)}
 										// src={basePath + "/" + d.src}
-										alt={"Image of " + data.title}
+										alt={d.imageCaption}
 										sizes="20vw"
 										style={{
 											width: "100%",
