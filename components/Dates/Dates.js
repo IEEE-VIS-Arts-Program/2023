@@ -54,7 +54,7 @@ export default function Dates() {
 					<p>
 						Wed 4 October - Sun 29 October 2023 <br/>
 						<a href="https://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/the-dock/library-at-the-dock/Pages/library-at-the-dock.aspx">
-							Library at the Doc Gallery
+							Library at the Dock Gallery
 						</a>
 					</p>
 				</Col>
