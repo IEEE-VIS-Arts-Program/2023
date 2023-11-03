@@ -47,7 +47,9 @@ export default function Home() {
 								Melbourne (VIC), Australia
 							</h6>
 							<GalleryHome className={classNames("mt-2", "mb-0")} />
-							<p className={classNames("mt-1", "mb-5", "text-center")} style={{color:"#666", fontSize: "0.75rem"}}>Somo pictures from VISAP 2023 exhibition (photos by Adam R. Thomas)</p>
+							<p className={classNames("mt-1", "mb-5", "text-center")} style={{ color: "#666", fontSize: "0.75rem" }}>
+								Some pictures from the latest VISAP exhibition (photos by Adam R. Thomas)
+							</p>
 							<p>
 								The <a href="https://visap.net">VIS Arts Program (VISAP)</a> is a mini-conference and exhibition in the{" "}
 								<a href="https://ieeevis.org/year/2023/welcome">IEEE VIS conference</a> program where visualization
