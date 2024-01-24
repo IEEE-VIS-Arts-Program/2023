@@ -30,6 +30,9 @@ export default function Header() {
 							<Link href="/contributions" className={classNames("nav-link", "reset-link")}>
 								Contributions
 							</Link>
+							<Link href={"/visap-catalogue-2023-web.pdf"} className={classNames("nav-link", "reset-link")}>
+								Catalogue
+							</Link>
 							<Link href="/programme" className={classNames("nav-link", "reset-link")}>
 								Programme
 							</Link>
